@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4B0688E04741B669278895E5 /* Pods_Chilindo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60357AD73CCD433347B8437F /* Pods_Chilindo.framework */; };
+		8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C661F631D0D003D19E3 /* MenuItemNameViewCell.swift */; };
+		8F089C741F631D0D003D19E3 /* MenuItemNameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C671F631D0D003D19E3 /* MenuItemNameViewCell.xib */; };
+		8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C681F631D0D003D19E3 /* UserInfoHeaderViewCell.swift */; };
+		8F089C761F631D0D003D19E3 /* UserInfoHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C691F631D0D003D19E3 /* UserInfoHeaderViewCell.xib */; };
+		8F089C771F631D0D003D19E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C6A1F631D0D003D19E3 /* Info.plist */; };
+		8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C6C1F631D0D003D19E3 /* MenuAnimator.swift */; };
+		8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C6D1F631D0D003D19E3 /* MenuContainerViewController.swift */; };
+		8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C6E1F631D0D003D19E3 /* MenuItem.swift */; };
+		8F089C7B1F631D0D003D19E3 /* MenuItemContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C6F1F631D0D003D19E3 /* MenuItemContentViewController.swift */; };
+		8F089C7C1F631D0D003D19E3 /* MenuNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C701F631D0D003D19E3 /* MenuNavigationView.xib */; };
+		8F089C7D1F631D0D003D19E3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C711F631D0D003D19E3 /* MenuViewController.swift */; };
+		8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C721F631D0D003D19E3 /* NavigationMenuViewController.swift */; };
+		8F089C811F631DD9003D19E3 /* ProfileHeaderMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C801F631DD9003D19E3 /* ProfileHeaderMenuItem.swift */; };
+		8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C821F631DE2003D19E3 /* TitledMenuItem.swift */; };
+		8F089C871F63221B003D19E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C861F63221B003D19E3 /* BaseViewController.swift */; };
 		8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */; };
 		8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */; };
 		8FB3D1001F62D9C300328FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */; };
@@ -39,6 +54,22 @@
 		17FC49A1F344A5A403F52644 /* Pods-ChilindoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChilindoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChilindoTests/Pods-ChilindoTests.release.xcconfig"; sourceTree = "<group>"; };
 		3361B10DA671304B9C303F11 /* Pods-Chilindo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.release.xcconfig"; sourceTree = "<group>"; };
 		60357AD73CCD433347B8437F /* Pods_Chilindo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chilindo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F089C661F631D0D003D19E3 /* MenuItemNameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemNameViewCell.swift; sourceTree = "<group>"; };
+		8F089C671F631D0D003D19E3 /* MenuItemNameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemNameViewCell.xib; sourceTree = "<group>"; };
+		8F089C681F631D0D003D19E3 /* UserInfoHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderViewCell.swift; sourceTree = "<group>"; };
+		8F089C691F631D0D003D19E3 /* UserInfoHeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoHeaderViewCell.xib; sourceTree = "<group>"; };
+		8F089C6A1F631D0D003D19E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F089C6B1F631D0D003D19E3 /* InteractiveSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveSideMenu.h; sourceTree = "<group>"; };
+		8F089C6C1F631D0D003D19E3 /* MenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimator.swift; sourceTree = "<group>"; };
+		8F089C6D1F631D0D003D19E3 /* MenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContainerViewController.swift; sourceTree = "<group>"; };
+		8F089C6E1F631D0D003D19E3 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ../MenuItem.swift; sourceTree = "<group>"; };
+		8F089C6F1F631D0D003D19E3 /* MenuItemContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemContentViewController.swift; sourceTree = "<group>"; };
+		8F089C701F631D0D003D19E3 /* MenuNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuNavigationView.xib; sourceTree = "<group>"; };
+		8F089C711F631D0D003D19E3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8F089C721F631D0D003D19E3 /* NavigationMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuViewController.swift; sourceTree = "<group>"; };
+		8F089C801F631DD9003D19E3 /* ProfileHeaderMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderMenuItem.swift; sourceTree = "<group>"; };
+		8F089C821F631DE2003D19E3 /* TitledMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledMenuItem.swift; sourceTree = "<group>"; };
+		8F089C861F63221B003D19E3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FB3D0F51F62D9C300328FE1 /* Chilindo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chilindo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +120,52 @@
 				17FC49A1F344A5A403F52644 /* Pods-ChilindoTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F089C641F631D0D003D19E3 /* NavMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8F089C7F1F631DC9003D19E3 /* Model */,
+				8F089C651F631D0D003D19E3 /* Cells */,
+				8F089C6A1F631D0D003D19E3 /* Info.plist */,
+				8F089C6B1F631D0D003D19E3 /* InteractiveSideMenu.h */,
+				8F089C6C1F631D0D003D19E3 /* MenuAnimator.swift */,
+				8F089C6D1F631D0D003D19E3 /* MenuContainerViewController.swift */,
+				8F089C6F1F631D0D003D19E3 /* MenuItemContentViewController.swift */,
+				8F089C701F631D0D003D19E3 /* MenuNavigationView.xib */,
+				8F089C711F631D0D003D19E3 /* MenuViewController.swift */,
+				8F089C721F631D0D003D19E3 /* NavigationMenuViewController.swift */,
+			);
+			path = NavMenu;
+			sourceTree = "<group>";
+		};
+		8F089C651F631D0D003D19E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8F089C661F631D0D003D19E3 /* MenuItemNameViewCell.swift */,
+				8F089C671F631D0D003D19E3 /* MenuItemNameViewCell.xib */,
+				8F089C681F631D0D003D19E3 /* UserInfoHeaderViewCell.swift */,
+				8F089C691F631D0D003D19E3 /* UserInfoHeaderViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8F089C7F1F631DC9003D19E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F089C6E1F631D0D003D19E3 /* MenuItem.swift */,
+				8F089C801F631DD9003D19E3 /* ProfileHeaderMenuItem.swift */,
+				8F089C821F631DE2003D19E3 /* TitledMenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F089C851F63220E003D19E3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8F089C861F63221B003D19E3 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8FB3D0EC1F62D9C300328FE1 = {
@@ -171,6 +248,8 @@
 		8FB914A61F62DB5B002761EA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8F089C851F63220E003D19E3 /* Base */,
+				8F089C641F631D0D003D19E3 /* NavMenu */,
 				8FB914B21F62DC55002761EA /* Home */,
 				8FB914A91F62DBAD002761EA /* Forecast */,
 				8FB914A71F62DB7A002761EA /* CurrentWeather */,
@@ -383,9 +462,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F089C771F631D0D003D19E3 /* Info.plist in Resources */,
 				8FB914E01F62E5D7002761EA /* ForecastView.xib in Resources */,
 				8FB3D1031F62D9C300328FE1 /* LaunchScreen.storyboard in Resources */,
+				8F089C761F631D0D003D19E3 /* UserInfoHeaderViewCell.xib in Resources */,
 				8FB914B51F62DD0C002761EA /* Localizations.strings in Resources */,
+				8F089C741F631D0D003D19E3 /* MenuItemNameViewCell.xib in Resources */,
+				8F089C7C1F631D0D003D19E3 /* MenuNavigationView.xib in Resources */,
 				8FB3D1001F62D9C300328FE1 /* Assets.xcassets in Resources */,
 				8FB914E21F62E5E0002761EA /* CurrentWeatherView.xib in Resources */,
 			);
@@ -499,11 +582,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB914BB1F62DDEF002761EA /* Coordinator.swift in Sources */,
+				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
+				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
+				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
+				8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */,
+				8F089C871F63221B003D19E3 /* BaseViewController.swift in Sources */,
+				8F089C811F631DD9003D19E3 /* ProfileHeaderMenuItem.swift in Sources */,
+				8F089C7D1F631D0D003D19E3 /* MenuViewController.swift in Sources */,
 				8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */,
+				8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */,
 				8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */,
 				8FB914DC1F62E5C3002761EA /* CurrentWeatherViewController.swift in Sources */,
 				8FB914DA1F62E5B1002761EA /* ForecastViewController.swift in Sources */,
+				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
+				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,
+				8F089C7B1F631D0D003D19E3 /* MenuItemContentViewController.swift in Sources */,
 				8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

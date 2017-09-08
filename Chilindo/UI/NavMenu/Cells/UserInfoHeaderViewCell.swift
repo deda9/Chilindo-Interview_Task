@@ -12,17 +12,21 @@ class UserInfoHeaderViewCell: UITableViewCell {
 
     public static let IDENTIFIRE = "UserInfoHeaderViewCell"
 
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var profileImageView: RoundedImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var emialLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = UIColor.clear
     }
     
     func updateCellData(_ item: MenuItem){
-        userNameLabel.text = item.userName
-        emialLabel.text = item.email
+        let userInfoModel = item as! ProfileHeaderMenuItem
+    
+        userNameLabel.text = userInfoModel.userName
+        emialLabel.text = userInfoModel.email
     }
 
 }

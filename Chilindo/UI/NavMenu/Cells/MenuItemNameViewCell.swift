@@ -17,10 +17,14 @@ class MenuItemNameViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = UIColor.clear
     }
     
     func updateCellData(_ item: MenuItem){
-        titleLabel.text = item.title
+        let titledItem = item as! TitledMenuItem
+        
+        titleLabel.text = titledItem.title
+        iconImageView.image = UIImage(named: titledItem.iconImageViewName)
     }
 
 }

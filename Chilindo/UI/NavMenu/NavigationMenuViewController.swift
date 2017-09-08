@@ -79,13 +79,13 @@ extension NavigationMenuViewController: UITableViewDelegate, UITableViewDataSour
         if(menuItem.type == MenuItemType.ProfileHeader){
             if let cell = tableView.dequeueReusableCell(withIdentifier: UserInfoHeaderViewCell.IDENTIFIRE, for: indexPath) as? UserInfoHeaderViewCell {
                 cell.updateCellData(menuItem)
-                tableView.allowsSelection = false
+                cell.selectionStyle = .none
                 return cell
             }
         }else{
             if let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemNameViewCell.IDENTIFIRE, for: indexPath) as? MenuItemNameViewCell {
                 cell.updateCellData(menuItem)
-                tableView.select = true
+                cell.selectionStyle = .none
                 return cell
             }
         }
@@ -93,11 +93,13 @@ extension NavigationMenuViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        //Cuase the first item is for the header of the user
+        if(indexPath.row == 0){
+            return
+        }
         guard let menuContainerViewController = self.menuContainerViewController else {
             return
         }
-        
         menuContainerViewController.selectContentViewController(menuContainerViewController.contentViewControllers[indexPath.row - 1])
         menuContainerViewController.hideSideMenu()
     }

@@ -13,5 +13,10 @@ class ForecastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTitle()
+    }
+    
+    func setTitle(){
+        navigationItem.title = "ForeCast"
     }
 }

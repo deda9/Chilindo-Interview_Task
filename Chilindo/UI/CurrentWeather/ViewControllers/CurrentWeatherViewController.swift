@@ -14,5 +14,10 @@ class CurrentWeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTitle()
+    }
+    
+    func setTitle(){
+        navigationItem.title = "Current Weather"
     }
 }

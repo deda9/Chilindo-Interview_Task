@@ -21,7 +21,7 @@ import UIKit
 /**
  Container for menu view controller.
  */
-open class MenuContainerViewController: UIViewController {
+open class MenuContainerViewController: BaseViewController {
 
     /**
      The view controller for side menu.
@@ -70,6 +70,10 @@ open class MenuContainerViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    override func openLeftMenu(){
+        self.showSideMenu()
+    }
+    
     /**
      Embeds menu item content view controller.
 

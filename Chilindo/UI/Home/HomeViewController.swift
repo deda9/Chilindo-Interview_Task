@@ -22,19 +22,21 @@ class HomeViewController: MenuContainerViewController {
     private func  getMenuItem() -> [MenuItem]{
         var menuItemArray = [MenuItem]()
         
-        var profileHeader = MenuItem()
+        var profileHeader = ProfileHeaderMenuItem()
         profileHeader.email = "Bassem"
         profileHeader.type = MenuItemType.ProfileHeader
         menuItemArray.append(profileHeader)
         
-        var currentWeather = MenuItem()
+        var currentWeather = TitledMenuItem()
         currentWeather.type = MenuItemType.TitledItem
         currentWeather.title = "Current Weather"
+        currentWeather.iconImageViewName  = "CurrentWeather"
         menuItemArray.append(currentWeather)
         
-        var forecast = MenuItem()
+        var forecast = TitledMenuItem()
         forecast.type = MenuItemType.TitledItem
         forecast.title = "Forecast"
+        forecast.iconImageViewName = "Forecast"
         menuItemArray.append(forecast)
         
         return menuItemArray

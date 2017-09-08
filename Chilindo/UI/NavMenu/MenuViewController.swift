@@ -18,7 +18,7 @@
 
 import UIKit
 
-open class MenuViewController: UIViewController {
+public class MenuViewController: BaseViewController {
     
     public weak var menuContainerViewController: MenuContainerViewController?
     var navigationMenuTransitionDelegate: MenuTransitioningDelegate?
