@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftMessages
+import Kingfisher
 
 class AppUtils {
     
@@ -40,4 +41,18 @@ class AppUtils {
         config.interactiveHide = true
         return config
     }
+    
+    public static func downloadImage(path: String?, placeholder: UIImage, into imageView: UIImageView, indicator: UIActivityIndicatorView?) -> Void {
+        
+        ImageCache.default.maxDiskCacheSize = UInt(50 * 1024 * 1024)
+        
+        let url = URL(string: path!)
+        let resource = ImageResource(downloadURL: url!, cacheKey: nil)
+        imageView.kf.setImage(with: resource,
+                              placeholder: placeholder,
+                              options: nil, progressBlock: nil) { (image, error, disk, url) in
+                                indicator?.removeFromSuperview()
+        }
+    }
+
 }

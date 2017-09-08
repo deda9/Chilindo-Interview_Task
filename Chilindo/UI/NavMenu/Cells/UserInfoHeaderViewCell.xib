@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fM1-v4-k9q" id="K3S-cj-VJT">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="235.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8AU-04-W1L">
@@ -25,7 +25,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-mz-pqC" customClass="RoundedImageView" customModule="Chilindo" customModuleProvider="target">
                         <rect key="frame" x="123" y="14" width="130" height="130"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="130" id="21x-Jv-kbf"/>
+                            <constraint firstAttribute="width" constant="130" id="Xzb-op-W6A"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-to-2t4">
@@ -42,19 +42,19 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="K0a-mz-pqC" firstAttribute="centerX" secondItem="K3S-cj-VJT" secondAttribute="centerX" id="3uq-Nn-r9d"/>
-                    <constraint firstAttribute="trailing" secondItem="8AU-04-W1L" secondAttribute="trailing" id="4CH-P0-Gbq"/>
-                    <constraint firstItem="GTq-to-2t4" firstAttribute="trailing" secondItem="OBD-Qv-SI8" secondAttribute="trailing" id="4JN-P2-beg"/>
-                    <constraint firstItem="8AU-04-W1L" firstAttribute="leading" secondItem="K3S-cj-VJT" secondAttribute="leading" id="85f-WE-8rM"/>
-                    <constraint firstItem="GTq-to-2t4" firstAttribute="top" secondItem="K0a-mz-pqC" secondAttribute="bottom" constant="20" id="9iF-2L-Onm"/>
-                    <constraint firstItem="K0a-mz-pqC" firstAttribute="centerX" secondItem="GTq-to-2t4" secondAttribute="centerX" id="EsN-oi-LnV"/>
-                    <constraint firstItem="K0a-mz-pqC" firstAttribute="top" secondItem="K3S-cj-VJT" secondAttribute="topMargin" constant="6" id="GJa-e4-RWd"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="OBD-Qv-SI8" secondAttribute="bottom" constant="9.5" id="WyW-NW-GO9"/>
-                    <constraint firstItem="8AU-04-W1L" firstAttribute="top" secondItem="K3S-cj-VJT" secondAttribute="top" id="Y5U-h9-FVh"/>
-                    <constraint firstItem="GTq-to-2t4" firstAttribute="leading" secondItem="K3S-cj-VJT" secondAttribute="leadingMargin" constant="42" id="ZmA-Nz-1E1"/>
-                    <constraint firstAttribute="bottom" secondItem="8AU-04-W1L" secondAttribute="bottom" id="aOo-ZC-M1f"/>
-                    <constraint firstItem="OBD-Qv-SI8" firstAttribute="top" secondItem="GTq-to-2t4" secondAttribute="bottom" constant="12" id="uQm-fn-YJA"/>
-                    <constraint firstItem="GTq-to-2t4" firstAttribute="leading" secondItem="OBD-Qv-SI8" secondAttribute="leading" id="zER-vj-SY8"/>
+                    <constraint firstItem="OBD-Qv-SI8" firstAttribute="top" secondItem="GTq-to-2t4" secondAttribute="bottom" constant="12" id="3S9-4z-ul6"/>
+                    <constraint firstItem="GTq-to-2t4" firstAttribute="leading" secondItem="K3S-cj-VJT" secondAttribute="leadingMargin" constant="42" id="AQw-th-dOg"/>
+                    <constraint firstItem="K0a-mz-pqC" firstAttribute="centerX" secondItem="GTq-to-2t4" secondAttribute="centerX" id="BCV-71-tvs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OBD-Qv-SI8" secondAttribute="bottom" constant="9.5" id="HFD-zw-o4k"/>
+                    <constraint firstItem="GTq-to-2t4" firstAttribute="leading" secondItem="OBD-Qv-SI8" secondAttribute="leading" id="LDZ-xW-Vwp"/>
+                    <constraint firstItem="K0a-mz-pqC" firstAttribute="top" secondItem="K3S-cj-VJT" secondAttribute="topMargin" constant="6" id="T8G-qL-tda"/>
+                    <constraint firstItem="8AU-04-W1L" firstAttribute="centerY" secondItem="K3S-cj-VJT" secondAttribute="centerY" id="YD1-kg-gFt"/>
+                    <constraint firstItem="8AU-04-W1L" firstAttribute="leading" secondItem="K3S-cj-VJT" secondAttribute="leading" id="Zjs-34-tTk"/>
+                    <constraint firstAttribute="trailing" secondItem="8AU-04-W1L" secondAttribute="trailing" id="apV-Wl-AkC"/>
+                    <constraint firstItem="GTq-to-2t4" firstAttribute="top" secondItem="K0a-mz-pqC" secondAttribute="bottom" constant="20" id="gwr-xi-UsM"/>
+                    <constraint firstItem="GTq-to-2t4" firstAttribute="trailing" secondItem="OBD-Qv-SI8" secondAttribute="trailing" id="iJD-eY-uqm"/>
+                    <constraint firstItem="8AU-04-W1L" firstAttribute="centerX" secondItem="GTq-to-2t4" secondAttribute="centerX" id="ub2-Tg-49q"/>
+                    <constraint firstItem="8AU-04-W1L" firstAttribute="top" secondItem="K3S-cj-VJT" secondAttribute="top" id="wOs-zH-m0D"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

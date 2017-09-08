@@ -27,6 +27,16 @@ class UserInfoHeaderViewCell: UITableViewCell {
     
         userNameLabel.text = userInfoModel.userName
         emialLabel.text = userInfoModel.email
+        
+        AppUtils.downloadImage(path: userInfoModel.profileImageUrl,
+                               placeholder: UIImage(named: "Menu")!,
+                               into: profileImageView,
+                               indicator: nil)
+        
+        AppUtils.downloadImage(path: userInfoModel.backgroundImageUrl,
+                               placeholder: UIImage(named: "Menu")!,
+                               into: backgroundImageView,
+                               indicator: nil)
     }
 
 }
