@@ -23,7 +23,10 @@ class LoginViewController: BaseViewController {
         if let accessToken = FacebookLoginUtls().login() {
             FacebookLoginRequest()
                 .login(accessToken: accessToken, onSuccess: { user in
-
+                    UserDefaultsUtils.saveUserName(user.name)
+                    UserDefaultsUtils.saveUserEmail(user.email)
+                    UserDefaultsUtils.saveUserProfileUrl(user.picture?.data?.url)
+                    UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
                 }, onError: { error in
                     
                 })

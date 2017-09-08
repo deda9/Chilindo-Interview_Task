@@ -22,7 +22,7 @@ class MenuItemNameViewCell: UITableViewCell {
     
     func updateCellData(_ item: MenuItem){
         let titledItem = item as! TitledMenuItem
-        
+    
         titleLabel.text = titledItem.title
         iconImageView.image = UIImage(named: titledItem.iconImageViewName)
     }

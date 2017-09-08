@@ -49,6 +49,7 @@
 		8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */; };
 		8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */; };
 		8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */; };
+		8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */; };
 		EA63FA01287A3B6FE213BE97 /* Pods_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendRequest.swift; sourceTree = "<group>"; };
 		8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtensions.swift; sourceTree = "<group>"; };
 		8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginRequest.swift; sourceTree = "<group>"; };
+		8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		9D60E625067E66161C37ADB2 /* Pods-Chilindo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.debug.xcconfig"; sourceTree = "<group>"; };
 		C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChilindoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -299,6 +301,7 @@
 				8F089C901F633625003D19E3 /* RoundButton.swift */,
 				8F089C951F63386A003D19E3 /* AppUtils.swift */,
 				8FC953ED1F633A01004AAC97 /* Constants.swift */,
+				8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -684,6 +687,7 @@
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
+				8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */,
 				8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
 				8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */,

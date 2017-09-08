@@ -23,7 +23,10 @@ class HomeViewController: MenuContainerViewController {
         var menuItemArray = [MenuItem]()
         
         var profileHeader = ProfileHeaderMenuItem()
-        profileHeader.email = "Bassem"
+        profileHeader.email = UserDefaultsUtils.getUserEmail()
+        profileHeader.userName = UserDefaultsUtils.getUserName()
+        profileHeader.profileImageUrl = UserDefaultsUtils.getUserProfileUrl()
+        profileHeader.backgroundImageUrl = UserDefaultsUtils.getUserCoverUrl()
         profileHeader.type = MenuItemType.ProfileHeader
         menuItemArray.append(profileHeader)
         

@@ -27,8 +27,6 @@ class UserInfoHeaderViewCell: UITableViewCell {
     
         userNameLabel.text = userInfoModel.userName
         emialLabel.text = userInfoModel.email
-        profileImageView.image = UIImage(named: "SplashScreen")
-        backgroundImageView.image = UIImage(named: "SplashScreen")
     }
 
 }
