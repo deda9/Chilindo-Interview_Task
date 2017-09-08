@@ -35,7 +35,7 @@ class LoginViewController: BaseViewController {
     
     func getUserProfile(_ user: User) -> String? {
         if let id = user.id{
-            return "http://graph.facebook.com/" + id + "/picture?type=large"
+            return "http://graph.facebook.com/" + id + "/picture?type=normal"
         }else{
             return user.picture?.data?.url
         }

@@ -12,7 +12,8 @@ import UIKit
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = frame.height / 2
+        let roundValue = min(frame.height / 2, frame.width / 2)
+        layer.cornerRadius = roundValue
         clipsToBounds =  true
     }
     
