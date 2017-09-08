@@ -25,11 +25,19 @@ class LoginViewController: BaseViewController {
                 .login(accessToken: accessToken, onSuccess: { user in
                     UserDefaultsUtils.saveUserName(user.name)
                     UserDefaultsUtils.saveUserEmail(user.email)
-                    UserDefaultsUtils.saveUserProfileUrl(user.picture?.data?.url)
+                    UserDefaultsUtils.saveUserProfileUrl(self.getUserProfile(user))
                     UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
                 }, onError: { error in
                     
                 })
+        }
+    }
+    
+    func getUserProfile(_ user: User) -> String? {
+        if let id = user.id{
+            return "http://graph.facebook.com/" + id + "/picture?type=large"
+        }else{
+            return user.picture?.data?.url
         }
     }
     
