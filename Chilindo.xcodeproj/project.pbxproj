@@ -46,6 +46,7 @@
 		8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F31F633F90004AAC97 /* UserCover.swift */; };
 		8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F51F633F95004AAC97 /* UserPhoto.swift */; };
 		8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */; };
+		8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */; };
 		EA63FA01287A3B6FE213BE97 /* Pods_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		8FC953F31F633F90004AAC97 /* UserCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCover.swift; sourceTree = "<group>"; };
 		8FC953F51F633F95004AAC97 /* UserPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhoto.swift; sourceTree = "<group>"; };
 		8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoData.swift; sourceTree = "<group>"; };
+		8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendRequest.swift; sourceTree = "<group>"; };
 		9D60E625067E66161C37ADB2 /* Pods-Chilindo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.debug.xcconfig"; sourceTree = "<group>"; };
 		C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChilindoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -307,6 +309,7 @@
 		8FB914A41F62DB36002761EA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
+				8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */,
 				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
 				8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */,
 				8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */,
