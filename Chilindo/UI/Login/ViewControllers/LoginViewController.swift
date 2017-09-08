@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginViewController: BaseViewController {
-
+    
     var navigationDelegate: LoginViewNavigations!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,11 @@ class LoginViewController: BaseViewController {
     //MARK: Actions
     //
     @IBAction func loginWithFacebook(_ sender: Any) {
+        _ = FacebookLoginRequest().login(success: {
+            
+        }) { error in
+            
+        }
         
     }
     

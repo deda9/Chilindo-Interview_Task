@@ -30,17 +30,13 @@ class FacebookLoginRequest{
                 
                 let credentials = facebookAccount?.credential
                 let oauthToken = credentials?.oauthToken
+                print("oauthToken",oauthToken)
             }
             else {
                 if let err = error as? NSError, err.code == Int(ACErrorAccountNotFound.rawValue) {
-                    DispatchQueue.main.async {
-                        AppUtils.showErrorMessage("There is no Facebook accounts configured. you can add or created a Facebook account in your settings.")
-                    }
+                    AppUtils.showErrorMessage("There is no Facebook accounts configured. you can add or created a Facebook account in your settings.")
                 } else {
-                    let err = error as? NSError
-                    DispatchQueue.main.async {
-                        AppUtils.showErrorMessage("Permission not granted For Your Application")
-                    }
+                    AppUtils.showErrorMessage("Permission not granted For Your Application")
                 }
             }
         }

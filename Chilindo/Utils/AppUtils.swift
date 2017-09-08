@@ -16,7 +16,7 @@ class AppUtils {
         view.configureTheme(.success)
         view.configureDropShadow()
         view.button?.removeFromSuperview()
-        view.configureContent(title: EventUtils.localizedString(forKey: "successTitle"), body: message)
+        view.configureContent(title: "Success", body: message)
         
         let config = getShowMessageConfig()
         SwiftMessages.show(config: config, view: view)
@@ -27,7 +27,7 @@ class AppUtils {
         view.configureTheme(.error)
         view.configureDropShadow()
         view.button?.removeFromSuperview()
-        view.configureContent(title: EventUtils.localizedString(forKey: "errorTitle"), body: message)
+        view.configureContent(title: "Error", body: message)
         let config = getShowMessageConfig()
         SwiftMessages.show(config: config, view: view)
     }

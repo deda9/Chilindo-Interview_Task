@@ -41,6 +41,11 @@
 		8FB914E01F62E5D7002761EA /* ForecastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB914DF1F62E5D7002761EA /* ForecastView.xib */; };
 		8FB914E21F62E5E0002761EA /* CurrentWeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB914E11F62E5E0002761EA /* CurrentWeatherView.xib */; };
 		8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB914F21F62E8A8002761EA /* RoundedImageView.swift */; };
+		8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953ED1F633A01004AAC97 /* Constants.swift */; };
+		8FC953F21F633F88004AAC97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F11F633F88004AAC97 /* User.swift */; };
+		8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F31F633F90004AAC97 /* UserCover.swift */; };
+		8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F51F633F95004AAC97 /* UserPhoto.swift */; };
+		8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */; };
 		EA63FA01287A3B6FE213BE97 /* Pods_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +102,11 @@
 		8FB914DF1F62E5D7002761EA /* ForecastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastView.xib; sourceTree = "<group>"; };
 		8FB914E11F62E5E0002761EA /* CurrentWeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentWeatherView.xib; sourceTree = "<group>"; };
 		8FB914F21F62E8A8002761EA /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		8FC953ED1F633A01004AAC97 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FC953F11F633F88004AAC97 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8FC953F31F633F90004AAC97 /* UserCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCover.swift; sourceTree = "<group>"; };
+		8FC953F51F633F95004AAC97 /* UserPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhoto.swift; sourceTree = "<group>"; };
+		8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoData.swift; sourceTree = "<group>"; };
 		9D60E625067E66161C37ADB2 /* Pods-Chilindo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.debug.xcconfig"; sourceTree = "<group>"; };
 		C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChilindoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,6 +191,7 @@
 		8F089C881F633590003D19E3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8FC953F01F633F7A004AAC97 /* Models */,
 				8F089C921F63383D003D19E3 /* Utils */,
 				8F089C8B1F6335B4003D19E3 /* Xibs */,
 				8F089C8A1F6335AB003D19E3 /* ViewControllers */,
@@ -280,6 +291,7 @@
 				8FB914F21F62E8A8002761EA /* RoundedImageView.swift */,
 				8F089C901F633625003D19E3 /* RoundButton.swift */,
 				8F089C951F63386A003D19E3 /* AppUtils.swift */,
+				8FC953ED1F633A01004AAC97 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -416,6 +428,17 @@
 				8FB914BA1F62DDEF002761EA /* Coordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8FC953F01F633F7A004AAC97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FC953F11F633F88004AAC97 /* User.swift */,
+				8FC953F31F633F90004AAC97 /* UserCover.swift */,
+				8FC953F51F633F95004AAC97 /* UserPhoto.swift */,
+				8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C26B349FEE43921FC3A16FB7 /* Frameworks */ = {
@@ -641,11 +664,15 @@
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
 				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
+				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
+				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
+				8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */,
 				8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */,
 				8F089C871F63221B003D19E3 /* BaseViewController.swift in Sources */,
 				8F089C811F631DD9003D19E3 /* ProfileHeaderMenuItem.swift in Sources */,
+				8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */,
 				8F089C7D1F631D0D003D19E3 /* MenuViewController.swift in Sources */,
 				8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */,
 				8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */,
@@ -656,6 +683,7 @@
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
 				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,
 				8F089C911F633625003D19E3 /* RoundButton.swift in Sources */,
+				8FC953F21F633F88004AAC97 /* User.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,
 				8F089C7B1F631D0D003D19E3 /* MenuItemContentViewController.swift in Sources */,
 				8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */,
