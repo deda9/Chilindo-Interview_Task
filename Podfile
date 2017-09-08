@@ -22,9 +22,8 @@ target 'Chilindo' do
     ###Rxswift
     pod 'RxSwift'
     
-    ###Menu
-    #pod 'InteractiveSideMenu'
-    
+    ###Messages
+    pod 'SwiftMessages'
     
     target 'ChilindoTests' do
         inherit! :search_paths

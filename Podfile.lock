@@ -12,6 +12,7 @@ PODS:
     - Alamofire (~> 4.0)
     - RxSwift (~> 3.0)
   - RxSwift (3.4.0)
+  - SwiftMessages (3.3.3)
 
 DEPENDENCIES:
   - Alamofire
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - ObjectMapper
   - RxAlamofire
   - RxSwift
+  - SwiftMessages
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -30,7 +32,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  SwiftMessages: 09cea3336e3fb63c3578983c8aac65acaa6d884a
 
-PODFILE CHECKSUM: 324c5871461b72493216083e310b70bec8477389
+PODFILE CHECKSUM: 06ff22ed3104410ba73a9ed8ff6a52de57551e1e
 
 COCOAPODS: 1.0.1
