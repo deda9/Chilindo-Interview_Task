@@ -97,10 +97,17 @@ extension NavigationMenuViewController: UITableViewDelegate, UITableViewDataSour
         if(indexPath.row == 0){
             return
         }
+        let index = indexPath.row
+        let menuItem = menuItems[index]
+        var title = ""
+        if(menuItem.type == MenuItemType.TitledItem){
+            title = (menuItem as! TitledMenuItem).title
+        }
+
         guard let menuContainerViewController = self.menuContainerViewController else {
             return
         }
-        menuContainerViewController.selectContentViewController(menuContainerViewController.contentViewControllers[indexPath.row - 1])
+        menuContainerViewController.selectContentViewController(menuContainerViewController.contentViewControllers[indexPath.row - 1], title: title)
         menuContainerViewController.hideSideMenu()
     }
 }

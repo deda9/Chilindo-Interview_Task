@@ -16,7 +16,7 @@ class HomeViewController: MenuContainerViewController {
         navigationMenuViewController.menuItems = getMenuItem()
         menuViewController = navigationMenuViewController as MenuViewController
         contentViewControllers = contentControllers()
-        selectContentViewController(contentViewControllers.first!)
+        selectContentViewController(contentViewControllers.first!, title: "Current Weather")
     }
 
     private func  getMenuItem() -> [MenuItem]{

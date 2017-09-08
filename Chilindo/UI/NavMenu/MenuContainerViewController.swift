@@ -79,7 +79,8 @@ open class MenuContainerViewController: BaseViewController {
 
      - parameter selectedContentVC: view controller to be embedded
      */
-    public func selectContentViewController(_ selectedContentVC: UIViewController) {
+    public func selectContentViewController(_ selectedContentVC: UIViewController, title: String) {
+        navigationItem.title = title
         if let currentContentVC = self.currentContentViewController {
             if currentContentVC != selectedContentVC {
                 currentContentVC.view.removeFromSuperview()
@@ -95,7 +96,6 @@ open class MenuContainerViewController: BaseViewController {
     //
     override open func viewDidLoad() {
         super.viewDidLoad()
-
         navigationMenuTransitionDelegate = MenuTransitioningDelegate()
         navigationMenuTransitionDelegate.interactiveTransition = MenuInteractiveTransition(
             presentAction: { [weak self] in self?.presentNavigationMenu() },

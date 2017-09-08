@@ -9,10 +9,13 @@
 
 import UIKit
 
-class ForecastViewController: UIViewController {
+class ForecastViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
         setTitle()
     }
     
