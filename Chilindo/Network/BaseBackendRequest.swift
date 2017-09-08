@@ -17,18 +17,17 @@ import AlamofireObjectMapper
 /**
  *
  * Base class for the alamofire network request
- * it contains two function one for get the response josn as array and
- * the other function for get the response as an Object
+ * it contains the function for get the response as an Object
  *
  */
 class BaseBackendRequest<T:Mappable>: NSObject{
     
-    public func getResponseObject(url: String, debugResponse: Bool = true) -> Observable<T>{
+    public func getResponseObject(url: String) -> Observable<T>{
         
         let url = URL(string: url)
         let alamofireRequest = RxAlamofire.request(getMethodType(),
-                                                   url!, parameters: getParameters(),
-                                                   encoding: JSONEncoding.default,
+                                                   url!,
+                                                   parameters: getParameters(),
                                                    headers: getHeaders())
         
         let observable = alamofireRequest.flatMap{
@@ -38,7 +37,7 @@ class BaseBackendRequest<T:Mappable>: NSObject{
     }
     
     func getMethodType() -> HTTPMethod {
-        return .post
+        return .get
     }
     
     func getHeaders() -> HTTPHeaders {
@@ -48,8 +47,8 @@ class BaseBackendRequest<T:Mappable>: NSObject{
         return headers
     }
     
-    func getParameters() -> Parameters? {
-        return nil
+    func getParameters() -> Parameters {
+        return [:]
     }
     
     func onRequestSuccess(data: T?) {

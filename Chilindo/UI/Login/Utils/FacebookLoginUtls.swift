@@ -9,14 +9,15 @@
 import Foundation
 import Accounts
 
-public protocol FacebookLogin{
-    func login(success:()->(), failure: (Error )->())
-    func login(accessToke: String, success:()->(), failure: (Error)->())
+protocol FacebookLogin{
+    func login() -> String?
 }
 
-class FacebookLoginRequest{
+class FacebookLoginUtls: FacebookLogin{
     
-    func login(success: () -> (), failure: (Error) -> ()) {
+    static var mOauthToken: String?
+    
+    func login() -> String? {
         let accountStore = ACAccountStore()
         var facebookAccount: ACAccount?
         let options:[String : Any] = [ACFacebookAppIdKey: Constants.FACEBOOK_API_KEY,
@@ -24,13 +25,17 @@ class FacebookLoginRequest{
         
         let facebookAccountType = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierFacebook)
         accountStore.requestAccessToAccounts(with: facebookAccountType, options: options) { (granted:Bool, error:Error?) in
-            if granted{
+            if granted {
                 let accounts = accountStore.accounts(with: facebookAccountType)
                 facebookAccount = accounts?.last as? ACAccount
                 
                 let credentials = facebookAccount?.credential
                 let oauthToken = credentials?.oauthToken
-                print("oauthToken",oauthToken)
+                
+                DispatchQueue.main.async {
+                    FacebookLoginUtls.mOauthToken = oauthToken
+                }
+                
             }
             else {
                 if let err = error as? NSError, err.code == Int(ACErrorAccountNotFound.rawValue) {
@@ -40,5 +45,6 @@ class FacebookLoginRequest{
                 }
             }
         }
+        return FacebookLoginUtls.mOauthToken
     }
 }

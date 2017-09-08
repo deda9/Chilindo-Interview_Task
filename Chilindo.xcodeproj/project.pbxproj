@@ -26,7 +26,7 @@
 		8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C8C1F6335BF003D19E3 /* LoginViewController.swift */; };
 		8F089C8F1F6335C8003D19E3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C8E1F6335C8003D19E3 /* LoginView.xib */; };
 		8F089C911F633625003D19E3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C901F633625003D19E3 /* RoundButton.swift */; };
-		8F089C941F633841003D19E3 /* FacebookLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C931F633841003D19E3 /* FacebookLoginRequest.swift */; };
+		8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */; };
 		8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C951F63386A003D19E3 /* AppUtils.swift */; };
 		8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */; };
 		8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */; };
@@ -47,6 +47,8 @@
 		8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F51F633F95004AAC97 /* UserPhoto.swift */; };
 		8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */; };
 		8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */; };
+		8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */; };
+		8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */; };
 		EA63FA01287A3B6FE213BE97 /* Pods_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +86,7 @@
 		8F089C8C1F6335BF003D19E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F089C8E1F6335C8003D19E3 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		8F089C901F633625003D19E3 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		8F089C931F633841003D19E3 /* FacebookLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginRequest.swift; sourceTree = "<group>"; };
+		8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUtls.swift; sourceTree = "<group>"; };
 		8F089C951F63386A003D19E3 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		8FB3D0F51F62D9C300328FE1 /* Chilindo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chilindo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 		8FC953F51F633F95004AAC97 /* UserPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhoto.swift; sourceTree = "<group>"; };
 		8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoData.swift; sourceTree = "<group>"; };
 		8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendRequest.swift; sourceTree = "<group>"; };
+		8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtensions.swift; sourceTree = "<group>"; };
+		8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginRequest.swift; sourceTree = "<group>"; };
 		9D60E625067E66161C37ADB2 /* Pods-Chilindo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.debug.xcconfig"; sourceTree = "<group>"; };
 		C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChilindoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +197,7 @@
 		8F089C881F633590003D19E3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8FC953FD1F634195004AAC97 /* Network */,
 				8FC953F01F633F7A004AAC97 /* Models */,
 				8F089C921F63383D003D19E3 /* Utils */,
 				8F089C8B1F6335B4003D19E3 /* Xibs */,
@@ -228,7 +233,7 @@
 		8F089C921F63383D003D19E3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8F089C931F633841003D19E3 /* FacebookLoginRequest.swift */,
+				8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */,
+				8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -442,6 +448,14 @@
 				8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8FC953FD1F634195004AAC97 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C26B349FEE43921FC3A16FB7 /* Frameworks */ = {
@@ -664,11 +678,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB914BB1F62DDEF002761EA /* Coordinator.swift in Sources */,
+				8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */,
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
 				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
+				8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
 				8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */,
 				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
@@ -682,7 +698,7 @@
 				8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */,
 				8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */,
 				8FB914DC1F62E5C3002761EA /* CurrentWeatherViewController.swift in Sources */,
-				8F089C941F633841003D19E3 /* FacebookLoginRequest.swift in Sources */,
+				8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */,
 				8FB914DA1F62E5B1002761EA /* ForecastViewController.swift in Sources */,
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
 				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,

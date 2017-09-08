@@ -13,6 +13,7 @@
  */
 class Constants{
     
-    public static let FACEBOOK_API_KEY = "115509002454606";
+    public static let FACEBOOK_API_URL = "https://graph.facebook.com/me"
+    public static let FACEBOOK_API_KEY = "115509002454606"
     
 }

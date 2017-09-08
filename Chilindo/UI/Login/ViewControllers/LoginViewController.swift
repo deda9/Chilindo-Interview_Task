@@ -20,12 +20,14 @@ class LoginViewController: BaseViewController {
     //MARK: Actions
     //
     @IBAction func loginWithFacebook(_ sender: Any) {
-        _ = FacebookLoginRequest().login(success: {
-            
-        }) { error in
-            
+        if let accessToken = FacebookLoginUtls().login() {
+            FacebookLoginRequest()
+                .login(accessToken: accessToken, onSuccess: { user in
+
+                }, onError: { error in
+                    
+                })
         }
-        
     }
     
     @IBAction func skipToHomeView(_ sender: Any) {
