@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '27C7EE71E00D3AC5F6680ABC486C25FA'
-               BlueprintName = 'RxAlamofire'
+               BlueprintIdentifier = 'BBA6DB5FA6683168A474738180A3EAE2'
+               BlueprintName = 'XLPagerTabStrip-XLPagerTabStrip'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RxAlamofire.framework'>
+               BuildableName = 'XLPagerTabStrip.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

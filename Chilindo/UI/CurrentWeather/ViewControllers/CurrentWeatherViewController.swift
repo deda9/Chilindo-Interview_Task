@@ -10,19 +10,9 @@
 
 import UIKit
 
-class CurrentWeatherViewController: BaseViewController {
+class CurrentWeatherViewController: BaseWeatherViewController {
     
-    @IBOutlet weak var weatherStateImageView: UIImageView!
-    @IBOutlet weak var weatherStateLabel: UILabel!
-    @IBOutlet weak var countryValueLabel: UILabel!
-    @IBOutlet weak var tempValueLabel: UILabel!
-    @IBOutlet weak var pressureValueLabel: UILabel!
-    @IBOutlet weak var humidityValueLabel: UILabel!
-    @IBOutlet weak var minTemoValueLabel: UILabel!
-    @IBOutlet weak var maxTemoValueLabel: UILabel!
-    @IBOutlet weak var seaLevelValueLabel: UILabel!
-    @IBOutlet weak var grandLevelValueLabel: UILabel!
-    @IBOutlet weak var windSpeedValueLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,72 +51,16 @@ class CurrentWeatherViewController: BaseViewController {
     }
     
     func setCurrentWeatherData(_ response: CurrentWeatherResponse){
-        if let pressure = response.weatherData?.pressure{
-            pressureValueLabel.text = String(pressure)
-        }else{
-            pressureValueLabel.text = "-"
-        }
-        
-        if let temp = response.weatherData?.temp{
-            tempValueLabel.text = String(temp)
-        }else{
-            tempValueLabel.text = "-"
-        }
-        
-        if let humidity = response.weatherData?.humidity{
-            humidityValueLabel.text = String(humidity)
-        }else{
-            humidityValueLabel.text = "-"
-        }
-        
-        
-        if let mintTemp = response.weatherData?.tempMin{
-            minTemoValueLabel.text = String(mintTemp)
-        }else{
-            minTemoValueLabel.text = "-"
-        }
-        
-        if let maxTemp = response.weatherData?.tempMax{
-            maxTemoValueLabel.text = String(maxTemp)
-        }else{
-            maxTemoValueLabel.text = "-"
-        }
-        
-        if let seaLevel = response.weatherData?.seaLevel{
-            seaLevelValueLabel.text = String(seaLevel)
-        }else{
-            seaLevelValueLabel.text = "-"
-        }
-        
-        if let grandLevel = response.weatherData?.grndLevel{
-            grandLevelValueLabel.text = String(grandLevel)
-        }else{
-            grandLevelValueLabel.text = "-"
-        }
-        
-        if let windSpeed = response.wind?.speed{
-            windSpeedValueLabel.text = String(windSpeed) + " m/s"
-        }else{
-            windSpeedValueLabel.text = "-"
-        }
-        
-        if let country = response.weatherSys?.country{
-            countryValueLabel.text = country
-        }else{
-            countryValueLabel.text = "-"
-        }
-        
-        guard (response.weatherState != nil), !(response.weatherState?.isEmpty)! else {
-            weatherStateLabel.text = "-"
-            return
-        }
-        
-        if let weatherState = response.weatherState?[0].descriptionField{
-            weatherStateLabel.text = weatherState
-        }else{
-            weatherStateLabel.text = "-"
-        }
-        
+        setPressure(response.weatherData)
+        setTemp(response.weatherData)
+        setHudimity(response.weatherData)
+        setMinTemp(response.weatherData)
+        setMaxTemp(response.weatherData)
+        setSeaLevel(response.weatherData)
+        setGrandLevel(response.weatherData)
+        setWindSpeeed(response.wind)
+        setWeatherSys(response.weatherSys)
+        setWeatherState(response.weatherState)
     }
     
 }

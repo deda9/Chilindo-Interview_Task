@@ -17,38 +17,6 @@
             endingLineNumber = "16"
             landmarkName = "getDaysWithForecastItemList(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Chilindo.ForecastResponseParser.getDaysWithForecastItemList (Chilindo.ForecastResponse) -&gt; Swift.Dictionary&lt;Chilindo.ForecastDate, Swift.Array&lt;Chilindo.ForecastItem&gt;&gt;"
-                  moduleName = "Chilindo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Deda/Documents/Chilando/Chilindo-Interview_Task/Chilindo/Utils/ForecastResponseParser.swift"
-                  timestampString = "526671183.90635"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Chilindo.ForecastResponseParser.getDaysWithForecastItemList (Chilindo.ForecastResponse) -&gt; Swift.Dictionary&lt;Chilindo.ForecastDate, Swift.Array&lt;Chilindo.ForecastItem&gt;&gt;"
-                  moduleName = "Chilindo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Deda/Documents/Chilando/Chilindo-Interview_Task/Chilindo/Utils/ForecastResponseParser.swift"
-                  timestampString = "526671183.907977"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "131">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -79,6 +47,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
+            landmarkName = "getForecast()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chilindo/UI/Forecast/ViewControllers/ForecastTabsViewController.swift"
+            timestampString = "526676014.651254"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "setForecastData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chilindo/UI/Forecast/ViewControllers/ForecastTabsViewController.swift"
+            timestampString = "526676115.970401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "setForecastData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chilindo/UI/Forecast/ViewControllers/ForecastTabsViewController.swift"
+            timestampString = "526676118.419836"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "setForecastData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chilindo/UI/Forecast/ViewControllers/ForecastTabsViewController.swift"
+            timestampString = "526676124.396121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "getForecast()"
             landmarkType = "7">
          </BreakpointContent>

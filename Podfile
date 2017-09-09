@@ -24,6 +24,9 @@ target 'Chilindo' do
     
     ###Messages
     pod 'SwiftMessages'
+    
+    ###Tabs
+    pod 'XLPagerTabStrip', '~> 7.0'
         
     target 'ChilindoTests' do
         inherit! :search_paths

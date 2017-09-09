@@ -59,10 +59,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLPagerTabStrip.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>078D63342E1F875A4F24F4DE32C95BDB</key>
+		<key>15EB5FF9B2CE87803D9362A55B893C27</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C6EE2FE3791CF68E68F951A62158B85</key>
+		<key>27C7EE71E00D3AC5F6680ABC486C25FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>300724B29B3BB628BC4AF94A3E72B6A7</key>
+		<key>544212980401A6DA7806F65EAD8C6637</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>544212980401A6DA7806F65EAD8C6637</key>
+		<key>799D878A8AF4C0E58F5C7CC6BBA47AA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>846F145D20FA98C2697385D4C1E4D00E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,17 +112,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9045D8FBE8F8929288A6A932247508B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9502FB01641FBABB78522037E882757B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8ECACD07ACB7A8672481585F7ECDEAB</key>
+		<key>A1669F551F98CE102EF7B9C2358C8567</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD4C97BC56D09C178CE030AC99FC0452</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBA6DB5FA6683168A474738180A3EAE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

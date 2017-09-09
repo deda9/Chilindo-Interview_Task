@@ -19,7 +19,7 @@
                 <outlet property="pressureValueLabel" destination="3be-lk-ynv" id="ZHO-R9-4v5"/>
                 <outlet property="seaLevelValueLabel" destination="sqq-xs-vrX" id="9z9-Cm-sQV"/>
                 <outlet property="tempValueLabel" destination="eIV-pQ-Rgu" id="JeD-vD-jaA"/>
-                <outlet property="view" destination="iN0-l3-epB" id="DCG-6O-jHy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="31I-KU-3gH"/>
                 <outlet property="weatherStateImageView" destination="XkJ-4L-oLs" id="7lw-6V-Ikw"/>
                 <outlet property="weatherStateLabel" destination="35m-0O-0vR" id="N2t-WL-P0k"/>
                 <outlet property="windSpeedValueLabel" destination="SZP-KB-5BX" id="3Sb-2l-5Sj"/>

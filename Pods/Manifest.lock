@@ -13,6 +13,7 @@ PODS:
     - RxSwift (~> 3.0)
   - RxSwift (3.4.0)
   - SwiftMessages (3.3.3)
+  - XLPagerTabStrip (7.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxSwift
   - SwiftMessages
+  - XLPagerTabStrip (~> 7.0)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -33,7 +35,8 @@ SPEC CHECKSUMS:
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   SwiftMessages: 09cea3336e3fb63c3578983c8aac65acaa6d884a
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 85635719115cffb79413ba6e982cfe81b0904808
+PODFILE CHECKSUM: 1a7744017f574c2a2ebcc2a9cdb40df4efd12fc8
 
 COCOAPODS: 1.0.1
