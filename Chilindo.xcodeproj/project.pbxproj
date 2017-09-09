@@ -28,8 +28,20 @@
 		8F089C911F633625003D19E3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C901F633625003D19E3 /* RoundButton.swift */; };
 		8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */; };
 		8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C951F63386A003D19E3 /* AppUtils.swift */; };
+		8FA618411F6413FD00D265A2 /* Accuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618341F6413FD00D265A2 /* Accuracy.swift */; };
+		8FA618421F6413FD00D265A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618351F6413FD00D265A2 /* Extensions.swift */; };
+		8FA618431F6413FD00D265A2 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618361F6413FD00D265A2 /* Frequency.swift */; };
+		8FA618441F6413FD00D265A2 /* GeocoderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618371F6413FD00D265A2 /* GeocoderRequest.swift */; };
+		8FA618451F6413FD00D265A2 /* HeadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618381F6413FD00D265A2 /* HeadingRequest.swift */; };
+		8FA618461F6413FD00D265A2 /* IPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618391F6413FD00D265A2 /* IPService.swift */; };
+		8FA618471F6413FD00D265A2 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183A1F6413FD00D265A2 /* LocationRequest.swift */; };
+		8FA618481F6413FD00D265A2 /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183B1F6413FD00D265A2 /* LocationTracker.swift */; };
+		8FA618491F6413FD00D265A2 /* RegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183C1F6413FD00D265A2 /* RegionRequest.swift */; };
+		8FA6184A1F6413FD00D265A2 /* RequestsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183D1F6413FD00D265A2 /* RequestsQueue.swift */; };
+		8FA6184B1F6413FD00D265A2 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183E1F6413FD00D265A2 /* Shared.swift */; };
+		8FA6184C1F6413FD00D265A2 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183F1F6413FD00D265A2 /* Structs.swift */; };
+		8FA6184D1F6413FD00D265A2 /* VisitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618401F6413FD00D265A2 /* VisitsRequest.swift */; };
 		8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */; };
-		8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */; };
 		8FB3D1001F62D9C300328FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */; };
 		8FB3D1031F62D9C300328FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D1011F62D9C300328FE1 /* LaunchScreen.storyboard */; };
 		8FB3D10E1F62D9C300328FE1 /* ChilindoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D10D1F62D9C300328FE1 /* ChilindoTests.swift */; };
@@ -89,9 +101,21 @@
 		8F089C901F633625003D19E3 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUtls.swift; sourceTree = "<group>"; };
 		8F089C951F63386A003D19E3 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		8FA618341F6413FD00D265A2 /* Accuracy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accuracy.swift; sourceTree = "<group>"; };
+		8FA618351F6413FD00D265A2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8FA618361F6413FD00D265A2 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		8FA618371F6413FD00D265A2 /* GeocoderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocoderRequest.swift; sourceTree = "<group>"; };
+		8FA618381F6413FD00D265A2 /* HeadingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingRequest.swift; sourceTree = "<group>"; };
+		8FA618391F6413FD00D265A2 /* IPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPService.swift; sourceTree = "<group>"; };
+		8FA6183A1F6413FD00D265A2 /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		8FA6183B1F6413FD00D265A2 /* LocationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
+		8FA6183C1F6413FD00D265A2 /* RegionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionRequest.swift; sourceTree = "<group>"; };
+		8FA6183D1F6413FD00D265A2 /* RequestsQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsQueue.swift; sourceTree = "<group>"; };
+		8FA6183E1F6413FD00D265A2 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		8FA6183F1F6413FD00D265A2 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		8FA618401F6413FD00D265A2 /* VisitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsRequest.swift; sourceTree = "<group>"; };
 		8FB3D0F51F62D9C300328FE1 /* Chilindo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chilindo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB3D1021F62D9C300328FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FB3D1041F62D9C300328FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -240,6 +264,26 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8FA618331F6413FD00D265A2 /* SwiftLocation */ = {
+			isa = PBXGroup;
+			children = (
+				8FA618341F6413FD00D265A2 /* Accuracy.swift */,
+				8FA618351F6413FD00D265A2 /* Extensions.swift */,
+				8FA618361F6413FD00D265A2 /* Frequency.swift */,
+				8FA618371F6413FD00D265A2 /* GeocoderRequest.swift */,
+				8FA618381F6413FD00D265A2 /* HeadingRequest.swift */,
+				8FA618391F6413FD00D265A2 /* IPService.swift */,
+				8FA6183A1F6413FD00D265A2 /* LocationRequest.swift */,
+				8FA6183B1F6413FD00D265A2 /* LocationTracker.swift */,
+				8FA6183C1F6413FD00D265A2 /* RegionRequest.swift */,
+				8FA6183D1F6413FD00D265A2 /* RequestsQueue.swift */,
+				8FA6183E1F6413FD00D265A2 /* Shared.swift */,
+				8FA6183F1F6413FD00D265A2 /* Structs.swift */,
+				8FA618401F6413FD00D265A2 /* VisitsRequest.swift */,
+			);
+			path = SwiftLocation;
+			sourceTree = "<group>";
+		};
 		8FB3D0EC1F62D9C300328FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -270,7 +314,6 @@
 				8FB914A21F62DB24002761EA /* Utils */,
 				8FB914A11F62DB13002761EA /* Models */,
 				8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */,
-				8FB3D0FA1F62D9C300328FE1 /* ViewController.swift */,
 				8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */,
 				8FB3D1011F62D9C300328FE1 /* LaunchScreen.storyboard */,
 				8FB3D1041F62D9C300328FE1 /* Info.plist */,
@@ -297,6 +340,7 @@
 		8FB914A21F62DB24002761EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8FA618331F6413FD00D265A2 /* SwiftLocation */,
 				8FB914F21F62E8A8002761EA /* RoundedImageView.swift */,
 				8F089C901F633625003D19E3 /* RoundButton.swift */,
 				8F089C951F63386A003D19E3 /* AppUtils.swift */,
@@ -680,10 +724,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA6184B1F6413FD00D265A2 /* Shared.swift in Sources */,
 				8FB914BB1F62DDEF002761EA /* Coordinator.swift in Sources */,
 				8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */,
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
 				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
+				8FA6184D1F6413FD00D265A2 /* VisitsRequest.swift in Sources */,
+				8FA618431F6413FD00D265A2 /* Frequency.swift in Sources */,
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
@@ -694,14 +741,22 @@
 				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
 				8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */,
 				8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */,
+				8FA618441F6413FD00D265A2 /* GeocoderRequest.swift in Sources */,
 				8F089C871F63221B003D19E3 /* BaseViewController.swift in Sources */,
+				8FA618481F6413FD00D265A2 /* LocationTracker.swift in Sources */,
+				8FA6184C1F6413FD00D265A2 /* Structs.swift in Sources */,
+				8FA618461F6413FD00D265A2 /* IPService.swift in Sources */,
+				8FA618491F6413FD00D265A2 /* RegionRequest.swift in Sources */,
 				8F089C811F631DD9003D19E3 /* ProfileHeaderMenuItem.swift in Sources */,
 				8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */,
 				8F089C7D1F631D0D003D19E3 /* MenuViewController.swift in Sources */,
-				8FB3D0FB1F62D9C300328FE1 /* ViewController.swift in Sources */,
+				8FA618451F6413FD00D265A2 /* HeadingRequest.swift in Sources */,
+				8FA618471F6413FD00D265A2 /* LocationRequest.swift in Sources */,
 				8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */,
+				8FA618411F6413FD00D265A2 /* Accuracy.swift in Sources */,
 				8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */,
 				8FB914DC1F62E5C3002761EA /* CurrentWeatherViewController.swift in Sources */,
+				8FA6184A1F6413FD00D265A2 /* RequestsQueue.swift in Sources */,
 				8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */,
 				8FB914DA1F62E5B1002761EA /* ForecastViewController.swift in Sources */,
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
@@ -710,6 +765,7 @@
 				8FC953F21F633F88004AAC97 /* User.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,
 				8F089C7B1F631D0D003D19E3 /* MenuItemContentViewController.swift in Sources */,
+				8FA618421F6413FD00D265A2 /* Extensions.swift in Sources */,
 				8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

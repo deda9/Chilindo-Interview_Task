@@ -12,6 +12,16 @@ import UIKit
 
 class CurrentWeatherViewController: BaseViewController {
     
+    @IBOutlet weak var countryValueLabel: UILabel!
+    @IBOutlet weak var tempValueLabel: UILabel!
+    @IBOutlet weak var pressureValueLabel: UILabel!
+    @IBOutlet weak var humidityValueLabel: UILabel!
+    @IBOutlet weak var minTemoValueLabel: UILabel!
+    @IBOutlet weak var maxTemoValueLabel: UILabel!
+    @IBOutlet weak var seaLevelValueLabel: UILabel!
+    @IBOutlet weak var grandLevelValueLabel: UILabel!
+    @IBOutlet weak var windSpeedValueLabel: UILabel!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
