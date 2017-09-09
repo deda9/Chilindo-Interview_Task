@@ -47,8 +47,8 @@ class HomeViewController: MenuContainerViewController {
     
     private func contentControllers() -> [UIViewController] {
         var contentList = [UIViewController]()
-        contentList.append(ForecastViewController(nibName: "ForecastView", bundle: nil))
         contentList.append(CurrentWeatherViewController(nibName: "CurrentWeatherView", bundle: nil))
+        contentList.append(ForecastViewController(nibName: "ForecastView", bundle: nil))
         return contentList
     }
 }

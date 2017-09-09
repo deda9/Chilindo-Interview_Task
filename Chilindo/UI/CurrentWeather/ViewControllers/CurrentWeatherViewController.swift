@@ -12,6 +12,8 @@ import UIKit
 
 class CurrentWeatherViewController: BaseViewController {
     
+    @IBOutlet weak var weatherStateImageView: UIImageView!
+    @IBOutlet weak var weatherStateLabel: UILabel!
     @IBOutlet weak var countryValueLabel: UILabel!
     @IBOutlet weak var tempValueLabel: UILabel!
     @IBOutlet weak var pressureValueLabel: UILabel!

@@ -41,6 +41,13 @@
 		8FA6184B1F6413FD00D265A2 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183E1F6413FD00D265A2 /* Shared.swift */; };
 		8FA6184C1F6413FD00D265A2 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6183F1F6413FD00D265A2 /* Structs.swift */; };
 		8FA6184D1F6413FD00D265A2 /* VisitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618401F6413FD00D265A2 /* VisitsRequest.swift */; };
+		8FA618501F6424E200D265A2 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6184F1F6424E200D265A2 /* Cloud.swift */; };
+		8FA618521F64251700D265A2 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618511F64251700D265A2 /* Coord.swift */; };
+		8FA618541F64254C00D265A2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618531F64254C00D265A2 /* WeatherData.swift */; };
+		8FA618561F6425F300D265A2 /* WeatherSys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618551F6425F300D265A2 /* WeatherSys.swift */; };
+		8FA618581F64264400D265A2 /* CurrentWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618571F64264400D265A2 /* CurrentWeatherResponse.swift */; };
+		8FA6185C1F64270000D265A2 /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6185B1F64270000D265A2 /* WeatherState.swift */; };
+		8FA6185E1F64274100D265A2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6185D1F64274100D265A2 /* Wind.swift */; };
 		8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */; };
 		8FB3D1001F62D9C300328FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */; };
 		8FB3D1031F62D9C300328FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D1011F62D9C300328FE1 /* LaunchScreen.storyboard */; };
@@ -114,6 +121,13 @@
 		8FA6183E1F6413FD00D265A2 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		8FA6183F1F6413FD00D265A2 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		8FA618401F6413FD00D265A2 /* VisitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsRequest.swift; sourceTree = "<group>"; };
+		8FA6184F1F6424E200D265A2 /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		8FA618511F64251700D265A2 /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		8FA618531F64254C00D265A2 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		8FA618551F6425F300D265A2 /* WeatherSys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSys.swift; sourceTree = "<group>"; };
+		8FA618571F64264400D265A2 /* CurrentWeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResponse.swift; sourceTree = "<group>"; };
+		8FA6185B1F64270000D265A2 /* WeatherState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
+		8FA6185D1F64274100D265A2 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		8FB3D0F51F62D9C300328FE1 /* Chilindo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chilindo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -284,6 +298,27 @@
 			path = SwiftLocation;
 			sourceTree = "<group>";
 		};
+		8FA6184E1F6424CB00D265A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FA6185B1F64270000D265A2 /* WeatherState.swift */,
+				8FA6184F1F6424E200D265A2 /* Cloud.swift */,
+				8FA618511F64251700D265A2 /* Coord.swift */,
+				8FA618531F64254C00D265A2 /* WeatherData.swift */,
+				8FA618551F6425F300D265A2 /* WeatherSys.swift */,
+				8FA618571F64264400D265A2 /* CurrentWeatherResponse.swift */,
+				8FA6185D1F64274100D265A2 /* Wind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FA6185F1F6427B700D265A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		8FB3D0EC1F62D9C300328FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +418,8 @@
 		8FB914A71F62DB7A002761EA /* CurrentWeather */ = {
 			isa = PBXGroup;
 			children = (
+				8FA6185F1F6427B700D265A2 /* Network */,
+				8FA6184E1F6424CB00D265A2 /* Models */,
 				8FB914AE1F62DC23002761EA /* Extensions */,
 				8FB914AF1F62DC23002761EA /* ViewControllers */,
 				8FB914B01F62DC23002761EA /* ViewModel */,
@@ -725,6 +762,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FA6184B1F6413FD00D265A2 /* Shared.swift in Sources */,
+				8FA6185E1F64274100D265A2 /* Wind.swift in Sources */,
 				8FB914BB1F62DDEF002761EA /* Coordinator.swift in Sources */,
 				8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */,
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
@@ -733,10 +771,13 @@
 				8FA618431F6413FD00D265A2 /* Frequency.swift in Sources */,
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
+				8FA618581F64264400D265A2 /* CurrentWeatherResponse.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
+				8FA618541F64254C00D265A2 /* WeatherData.swift in Sources */,
 				8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */,
 				8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
+				8FA618501F6424E200D265A2 /* Cloud.swift in Sources */,
 				8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */,
 				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
 				8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */,
@@ -744,6 +785,7 @@
 				8FA618441F6413FD00D265A2 /* GeocoderRequest.swift in Sources */,
 				8F089C871F63221B003D19E3 /* BaseViewController.swift in Sources */,
 				8FA618481F6413FD00D265A2 /* LocationTracker.swift in Sources */,
+				8FA618521F64251700D265A2 /* Coord.swift in Sources */,
 				8FA6184C1F6413FD00D265A2 /* Structs.swift in Sources */,
 				8FA618461F6413FD00D265A2 /* IPService.swift in Sources */,
 				8FA618491F6413FD00D265A2 /* RegionRequest.swift in Sources */,
@@ -754,6 +796,7 @@
 				8FA618471F6413FD00D265A2 /* LocationRequest.swift in Sources */,
 				8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */,
 				8FA618411F6413FD00D265A2 /* Accuracy.swift in Sources */,
+				8FA6185C1F64270000D265A2 /* WeatherState.swift in Sources */,
 				8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */,
 				8FB914DC1F62E5C3002761EA /* CurrentWeatherViewController.swift in Sources */,
 				8FA6184A1F6413FD00D265A2 /* RequestsQueue.swift in Sources */,
@@ -761,6 +804,7 @@
 				8FB914DA1F62E5B1002761EA /* ForecastViewController.swift in Sources */,
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
 				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,
+				8FA618561F6425F300D265A2 /* WeatherSys.swift in Sources */,
 				8F089C911F633625003D19E3 /* RoundButton.swift in Sources */,
 				8FC953F21F633F88004AAC97 /* User.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,
