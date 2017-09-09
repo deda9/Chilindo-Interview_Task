@@ -1,5 +1,5 @@
 //
-//  CurrentWeatherNetworkRequest.swift
+//  ForecastNetworkRequest.swift
 //  Chilindo
 //
 //  Created by Bassem Qoulta on 9/9/17.
@@ -8,8 +8,8 @@
 import RxSwift
 import Alamofire
 
-class CurrentWeatherNetworkRequest: BaseBackendRequest<CurrentWeatherResponse> {
-
+class ForecastNetworkRequest: BaseBackendRequest<ForecastResponse> {
+    
     var disposeBag = DisposeBag()
     var subscribtion: Disposable?
     var appKey = ""
@@ -17,14 +17,14 @@ class CurrentWeatherNetworkRequest: BaseBackendRequest<CurrentWeatherResponse> {
     var long = ""
     var tempUnits = ""
     
-    public func getCurrentWeather(appKey: String, late: String, long: String, tempUnits: String, onSuccess: @escaping (CurrentWeatherResponse) -> Void, onError: @escaping (NSError) -> ()){
+    public func getForecast(appKey: String, late: String, long: String, tempUnits: String, onSuccess: @escaping (ForecastResponse) -> Void, onError: @escaping (NSError) -> ()){
         
         self.appKey = appKey
         self.late = late
         self.long = long
         self.tempUnits = tempUnits
         
-        subscribtion = getResponseObject(url: Constants.CURRENT_WEATHER_URL)
+        subscribtion = getResponseObject(url: Constants.FORECAST_URL)
             .subscribe(onNext: { response in
                 onSuccess(response)
                 
@@ -41,7 +41,7 @@ class CurrentWeatherNetworkRequest: BaseBackendRequest<CurrentWeatherResponse> {
                           "lat"   : late,
                           "lon"   : long,
                           "units" : tempUnits,
-        ]
+                          ]
         return parameters
     }
     

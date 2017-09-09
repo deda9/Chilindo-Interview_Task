@@ -70,6 +70,13 @@
 		8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */; };
 		8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */; };
 		8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */; };
+		8FFD5AC21F644A57004955BB /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5AC11F644A57004955BB /* ForecastResponse.swift */; };
+		8FFD5AC41F644AAA004955BB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5AC31F644AAA004955BB /* City.swift */; };
+		8FFD5AC61F644AD4004955BB /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5AC51F644AD4004955BB /* Rain.swift */; };
+		8FFD5AC81F644B58004955BB /* ForecastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5AC71F644B58004955BB /* ForecastItem.swift */; };
+		8FFD5ACB1F644BED004955BB /* ForecastNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5ACA1F644BED004955BB /* ForecastNetworkRequest.swift */; };
+		8FFD5ACD1F6452B6004955BB /* ForecastResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5ACC1F6452B6004955BB /* ForecastResponseParser.swift */; };
+		8FFD5ACF1F64581C004955BB /* ForecastDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD5ACE1F64581C004955BB /* ForecastDate.swift */; };
 		EA63FA01287A3B6FE213BE97 /* Pods_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +162,13 @@
 		8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtensions.swift; sourceTree = "<group>"; };
 		8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginRequest.swift; sourceTree = "<group>"; };
 		8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		8FFD5AC11F644A57004955BB /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		8FFD5AC31F644AAA004955BB /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8FFD5AC51F644AD4004955BB /* Rain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		8FFD5AC71F644B58004955BB /* ForecastItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastItem.swift; sourceTree = "<group>"; };
+		8FFD5ACA1F644BED004955BB /* ForecastNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastNetworkRequest.swift; sourceTree = "<group>"; };
+		8FFD5ACC1F6452B6004955BB /* ForecastResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponseParser.swift; sourceTree = "<group>"; };
+		8FFD5ACE1F64581C004955BB /* ForecastDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDate.swift; sourceTree = "<group>"; };
 		9D60E625067E66161C37ADB2 /* Pods-Chilindo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.debug.xcconfig"; sourceTree = "<group>"; };
 		C765220BA539C0BF758D0232 /* Pods_ChilindoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChilindoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,7 +364,6 @@
 				8FB914A41F62DB36002761EA /* Network */,
 				8FB914A31F62DB2C002761EA /* Resource */,
 				8FB914A21F62DB24002761EA /* Utils */,
-				8FB914A11F62DB13002761EA /* Models */,
 				8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */,
 				8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */,
 				8FB3D1011F62D9C300328FE1 /* LaunchScreen.storyboard */,
@@ -368,13 +381,6 @@
 			path = ChilindoTests;
 			sourceTree = "<group>";
 		};
-		8FB914A11F62DB13002761EA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		8FB914A21F62DB24002761EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +390,7 @@
 				8F089C951F63386A003D19E3 /* AppUtils.swift */,
 				8FC953ED1F633A01004AAC97 /* Constants.swift */,
 				8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */,
+				8FFD5ACC1F6452B6004955BB /* ForecastResponseParser.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -434,6 +441,8 @@
 		8FB914A91F62DBAD002761EA /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				8FFD5AC91F644BDF004955BB /* Netwrok */,
+				8FFD5AC01F644A4B004955BB /* Models */,
 				8FB914AD1F62DC0B002761EA /* Xibs */,
 				8FB914AC1F62DC03002761EA /* ViewModel */,
 				8FB914AB1F62DBF8002761EA /* ViewControllers */,
@@ -543,6 +552,26 @@
 				8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		8FFD5AC01F644A4B004955BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD5AC11F644A57004955BB /* ForecastResponse.swift */,
+				8FFD5AC31F644AAA004955BB /* City.swift */,
+				8FFD5AC51F644AD4004955BB /* Rain.swift */,
+				8FFD5AC71F644B58004955BB /* ForecastItem.swift */,
+				8FFD5ACE1F64581C004955BB /* ForecastDate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FFD5AC91F644BDF004955BB /* Netwrok */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD5ACA1F644BED004955BB /* ForecastNetworkRequest.swift */,
+			);
+			path = Netwrok;
 			sourceTree = "<group>";
 		};
 		C26B349FEE43921FC3A16FB7 /* Frameworks */ = {
@@ -767,6 +796,8 @@
 				8FA6184B1F6413FD00D265A2 /* Shared.swift in Sources */,
 				8FA6185E1F64274100D265A2 /* Wind.swift in Sources */,
 				8FB914BB1F62DDEF002761EA /* Coordinator.swift in Sources */,
+				8FFD5AC81F644B58004955BB /* ForecastItem.swift in Sources */,
+				8FFD5AC21F644A57004955BB /* ForecastResponse.swift in Sources */,
 				8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */,
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
 				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
@@ -775,13 +806,16 @@
 				8F089C7E1F631D0D003D19E3 /* NavigationMenuViewController.swift in Sources */,
 				8FC953F41F633F90004AAC97 /* UserCover.swift in Sources */,
 				8FA618581F64264400D265A2 /* CurrentWeatherResponse.swift in Sources */,
+				8FFD5ACD1F6452B6004955BB /* ForecastResponseParser.swift in Sources */,
 				8F089C831F631DE2003D19E3 /* TitledMenuItem.swift in Sources */,
 				8FA618541F64254C00D265A2 /* WeatherData.swift in Sources */,
 				8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */,
 				8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */,
+				8FFD5ACB1F644BED004955BB /* ForecastNetworkRequest.swift in Sources */,
 				8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */,
 				8FA618501F6424E200D265A2 /* Cloud.swift in Sources */,
 				8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */,
+				8FFD5ACF1F64581C004955BB /* ForecastDate.swift in Sources */,
 				8FC953EE1F633A01004AAC97 /* Constants.swift in Sources */,
 				8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */,
 				8F089C781F631D0D003D19E3 /* MenuAnimator.swift in Sources */,
@@ -793,6 +827,7 @@
 				8FA618461F6413FD00D265A2 /* IPService.swift in Sources */,
 				8FA618491F6413FD00D265A2 /* RegionRequest.swift in Sources */,
 				8F089C811F631DD9003D19E3 /* ProfileHeaderMenuItem.swift in Sources */,
+				8FFD5AC41F644AAA004955BB /* City.swift in Sources */,
 				8FC953F61F633F95004AAC97 /* UserPhoto.swift in Sources */,
 				8F089C7D1F631D0D003D19E3 /* MenuViewController.swift in Sources */,
 				8FA618451F6413FD00D265A2 /* HeadingRequest.swift in Sources */,
@@ -813,6 +848,7 @@
 				8FC953F21F633F88004AAC97 /* User.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,
 				8F089C7B1F631D0D003D19E3 /* MenuItemContentViewController.swift in Sources */,
+				8FFD5AC61F644AD4004955BB /* Rain.swift in Sources */,
 				8FA618421F6413FD00D265A2 /* Extensions.swift in Sources */,
 				8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */,
 			);

@@ -17,8 +17,12 @@ class Constants{
     public static let FACEBOOK_API_KEY = "115509002454606"
     
     private static let WEATHER_BASE_URL = "http://api.openweathermap.org/data/2.5/"
+    
     private static let CURRENT_WEATHER = "weather"
     public static let CURRENT_WEATHER_URL = WEATHER_BASE_URL + CURRENT_WEATHER
+
+    private static let FORECAST = "forecast"
+    public static let FORECAST_URL = WEATHER_BASE_URL + FORECAST
 
     public static let WEATHER_APP_KEY = ""
     
