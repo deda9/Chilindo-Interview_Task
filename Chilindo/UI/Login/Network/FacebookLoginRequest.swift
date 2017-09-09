@@ -11,7 +11,6 @@ import Foundation
 import RxSwift
 import Alamofire
 
-
 class FacebookLoginRequest: BaseBackendRequest<User> {
     var disposeBag = DisposeBag()
     var mAccessToken: String = ""

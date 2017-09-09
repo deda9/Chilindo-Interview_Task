@@ -48,6 +48,7 @@
 		8FA618581F64264400D265A2 /* CurrentWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618571F64264400D265A2 /* CurrentWeatherResponse.swift */; };
 		8FA6185C1F64270000D265A2 /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6185B1F64270000D265A2 /* WeatherState.swift */; };
 		8FA6185E1F64274100D265A2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6185D1F64274100D265A2 /* Wind.swift */; };
+		8FA618611F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA618601F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift */; };
 		8FB3D0F91F62D9C300328FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */; };
 		8FB3D1001F62D9C300328FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */; };
 		8FB3D1031F62D9C300328FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB3D1011F62D9C300328FE1 /* LaunchScreen.storyboard */; };
@@ -128,6 +129,7 @@
 		8FA618571F64264400D265A2 /* CurrentWeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResponse.swift; sourceTree = "<group>"; };
 		8FA6185B1F64270000D265A2 /* WeatherState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
 		8FA6185D1F64274100D265A2 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		8FA618601F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherNetworkRequest.swift; sourceTree = "<group>"; };
 		8FB3D0F51F62D9C300328FE1 /* Chilindo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chilindo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB3D0F81F62D9C300328FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB3D0FF1F62D9C300328FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		8FA6185F1F6427B700D265A2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8FA618601F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
 				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,
 				8FA618561F6425F300D265A2 /* WeatherSys.swift in Sources */,
+				8FA618611F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift in Sources */,
 				8F089C911F633625003D19E3 /* RoundButton.swift in Sources */,
 				8FC953F21F633F88004AAC97 /* User.swift in Sources */,
 				8FB914B71F62DD48002761EA /* HomeViewController.swift in Sources */,

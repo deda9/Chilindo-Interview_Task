@@ -16,10 +16,10 @@ class CurrentWeatherResponse: Mappable{
     var coord : Coord?
     var dt : Int?
     var id : Int?
-    var main : WeatherData?
+    var weatherData : WeatherData?
     var name : String?
-    var sys : WeatherSys?
-    var weather : [WeatherState]?
+    var weatherSys : WeatherSys?
+    var weatherState : [WeatherState]?
     var wind : Wind?
     
     required init?(map: Map){}
@@ -31,10 +31,10 @@ class CurrentWeatherResponse: Mappable{
         coord <- map["coord"]
         dt <- map["dt"]
         id <- map["id"]
-        main <- map["main"]
+        weatherData <- map["main"]
         name <- map["name"]
-        sys <- map["sys"]
-        weather <- map["weather"]
+        weatherSys <- map["sys"]
+        weatherState <- map["weather"]
         wind <- map["wind"]
     }
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Chilindo/UI/Login/Network/FacebookLoginRequest.swift"
-            timestampString = "526601969.58495"
+            timestampString = "526658261.8553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "login(accessToken:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Chilindo/UI/Login/Network/FacebookLoginRequest.swift"
-            timestampString = "526601969.58495"
+            timestampString = "526658261.8553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "login(accessToken:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
