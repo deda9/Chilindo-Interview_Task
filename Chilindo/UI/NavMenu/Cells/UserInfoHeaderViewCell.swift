@@ -29,12 +29,12 @@ class UserInfoHeaderViewCell: UITableViewCell {
         emialLabel.text = userInfoModel.email
         
         AppUtils.downloadImage(path: userInfoModel.profileImageUrl,
-                               placeholder: UIImage(named: "Menu")!,
+                               placeholder: UIImage(named: "Avatar")!,
                                into: profileImageView,
                                indicator: nil)
         
         AppUtils.downloadImage(path: userInfoModel.backgroundImageUrl,
-                               placeholder: UIImage(named: "Menu")!,
+                               placeholder: UIImage(named: "Cover")!,
                                into: backgroundImageView,
                                indicator: nil)
     }
