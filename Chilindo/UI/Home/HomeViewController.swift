@@ -17,6 +17,7 @@ class HomeViewController: MenuContainerViewController {
         menuViewController = navigationMenuViewController as MenuViewController
         contentViewControllers = contentControllers()
         selectContentViewController(contentViewControllers.first!, title: "Current Weather")
+        addMenuIconOnNavigationBar()
     }
 
     private func  getMenuItem() -> [MenuItem]{

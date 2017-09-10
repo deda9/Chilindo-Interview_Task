@@ -16,18 +16,18 @@ class FacebookLoginRequest: BaseBackendRequest<User> {
     var mAccessToken: String = ""
     var subscribtion: Disposable?
     
-    public func login(accessToken: String, onSuccess: @escaping (User) -> Void, onError: @escaping (NSError) -> ()){
+    public func login(accessToken: String) -> Observable<User>{
         mAccessToken = accessToken
-        subscribtion = getResponseObject(url: Constants.FACEBOOK_API_URL)
-            .subscribe(onNext: { user in
-                onSuccess(user)
-                
-            }, onError: { error in
-                onError(error as NSError)
-                
-            }, onCompleted: {
-                
-            })
+       return getResponseObject(url: Constants.FACEBOOK_API_URL)
+//            .subscribe(onNext: { user in
+////                onSuccess(user)
+//                
+//            }, onError: { error in
+////                onError(error as NSError)
+//                
+//            }, onCompleted: {
+//                
+//            })
     }
     
     override func getParameters() -> Parameters {

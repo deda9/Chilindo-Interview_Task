@@ -56,8 +56,10 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
         }
         
          for (date, forecastList) in daysWithForecastItemList {
-            print("date", date.dateText ,"  ",  forecastList.count)
-            tabViewsList.append(ForecastListViewController())
+            let view = ForecastListViewController(nibName: "ForecastListView", bundle: nil)
+            view.tabTitle = date.dateText
+            view.forecastItemList = forecastList
+            tabViewsList.append(view)
             
         }
         return tabViewsList

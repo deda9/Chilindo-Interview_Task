@@ -15,7 +15,6 @@ open class BaseViewController: UIViewController {
         showNavigationBar()
         customNavigationBarColor()
         hideNavigationBottomLine()
-        addMenuIconOnNavigationBar()
     }
     
     func addMenuIconOnNavigationBar() -> Void {

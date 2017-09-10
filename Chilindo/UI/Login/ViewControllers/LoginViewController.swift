@@ -20,17 +20,18 @@ class LoginViewController: BaseViewController {
     //MARK: Actions
     //
     @IBAction func loginWithFacebook(_ sender: Any) {
-        if let accessToken = FacebookLoginUtls().login() {
-            FacebookLoginRequest()
-                .login(accessToken: accessToken, onSuccess: { user in
-                    UserDefaultsUtils.saveUserName(user.name)
-                    UserDefaultsUtils.saveUserEmail(user.email)
-                    UserDefaultsUtils.saveUserProfileUrl(self.getUserProfile(user))
-                    UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
-                }, onError: { error in
-                    
-                })
-        }
+        FacebookLoginUtls().getFacebookUserData()
+//        if let accessToken = FacebookLoginUtls().login() {
+//            FacebookLoginRequest()
+//                .login(accessToken: accessToken, onSuccess: { user in
+//                    UserDefaultsUtils.saveUserName(user.name)
+//                    UserDefaultsUtils.saveUserEmail(user.email)
+//                    UserDefaultsUtils.saveUserProfileUrl(self.getUserProfile(user))
+//                    UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
+//                }, onError: { error in
+//                    
+//                })
+//        }
     }
     
     func getUserProfile(_ user: User) -> String? {
