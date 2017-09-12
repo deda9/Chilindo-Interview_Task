@@ -12,8 +12,6 @@ import UIKit
 
 class CurrentWeatherViewController: BaseWeatherViewController {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCurrentWeather()
@@ -28,6 +26,7 @@ class CurrentWeatherViewController: BaseWeatherViewController {
     }
     
     func getCurrentWeather(){
+        showProgressDialog()
         Location.getLocation(accuracy: .room, frequency: .oneShot, success: { (_, location) -> (Void) in
             let late = String(location.coordinate.latitude)
             let long = String(location.coordinate.longitude)
@@ -39,13 +38,17 @@ class CurrentWeatherViewController: BaseWeatherViewController {
                                                              late: late,
                                                              long: long,
                                                              tempUnits: "imperial",
-                                                             onSuccess: { (response) in
-                                                                self.setCurrentWeatherData(response)
+                                                             onSuccess: { [weak self](response) in
+                                                                self?.setCurrentWeatherData(response)
+                                                                self?.hideProgressDialog()
             },
-                                                             onError: { error in })
+                                                             onError: {  [weak self] error in
+                                                                self?.hideProgressDialog()
+            })
             
-        }) { (request, lastLocation, error) -> (Void) in
+        }) {[weak self] (request, lastLocation, error) -> (Void) in
             request.cancel()
+            self?.hideProgressDialog()
             AppUtils.showErrorMessage("Location monitoring failed due to an error \(error)")
         }
     }

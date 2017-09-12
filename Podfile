@@ -29,8 +29,8 @@ target 'Chilindo' do
     pod 'XLPagerTabStrip', '~> 7.0'
         
     target 'ChilindoTests' do
-        inherit! :search_paths
-        # Pods for testing
+        pod 'Quick'
+        pod 'Nimble'
     end
     
 end

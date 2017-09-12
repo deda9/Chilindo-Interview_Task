@@ -5,7 +5,9 @@ PODS:
     - ObjectMapper (~> 2.0)
   - Cartography (1.1.0)
   - Kingfisher (3.6.2)
+  - Nimble (6.1.0)
   - ObjectMapper (2.2.6)
+  - Quick (1.1.0)
   - RxAlamofire (3.0.2):
     - RxAlamofire/Core (= 3.0.2)
   - RxAlamofire/Core (3.0.2):
@@ -20,7 +22,9 @@ DEPENDENCIES:
   - AlamofireObjectMapper
   - Cartography
   - Kingfisher
+  - Nimble
   - ObjectMapper
+  - Quick
   - RxAlamofire
   - RxSwift
   - SwiftMessages
@@ -31,12 +35,14 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   Cartography: 0538ccb4044acbbda2266335fc58cb4228794d90
   Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  Nimble: c53e6903fee94041b90ded74f135820437d8bf59
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   SwiftMessages: 09cea3336e3fb63c3578983c8aac65acaa6d884a
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 1a7744017f574c2a2ebcc2a9cdb40df4efd12fc8
+PODFILE CHECKSUM: ad11d1c1b8da44b5d2704a2da6e3b8e40c00f02c
 
 COCOAPODS: 1.0.1

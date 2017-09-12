@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Cartography
 
 open class BaseViewController: UIViewController {
-    
+    var dialogFullScreenView: UIView?
+    var dialogLoadingGroup: STLoadingGroup?
+
     override open func viewDidLoad() {
         super.viewDidLoad()
         showNavigationBar()
@@ -48,5 +51,30 @@ open class BaseViewController: UIViewController {
     
     public func showNavigationBar(){
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    
+    public func showProgressDialog(){
+        dialogLoadingGroup = STLoadingGroup(side: 80, style: .arch)
+        
+        if dialogFullScreenView == nil {
+            dialogFullScreenView = UIView(frame: self.view.frame)
+            dialogFullScreenView?.backgroundColor = UIColor(red: 0.0, green: 0.0, blue:0.0, alpha: 0.3)
+        }
+        
+        if !(dialogFullScreenView?.isDescendant(of: self.view))!{
+            self.view.addSubview(dialogFullScreenView!)
+            constrain(dialogFullScreenView!) { view in
+                view.edges == view.superview!.edges
+            }
+        }
+        
+        dialogLoadingGroup?.show(dialogFullScreenView)
+        dialogLoadingGroup?.startLoading()
+    }
+    
+    public func hideProgressDialog(){
+        dialogLoadingGroup?.stopLoading()
+        dialogFullScreenView?.removeFromSuperview()
     }
 }

@@ -24,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Chilindo-ChilindoTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,7 +44,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ChilindoTests.xcscheme</key>
+		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -77,11 +87,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A888403C53A616088270C1A99D27D83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>27C7EE71E00D3AC5F6680ABC486C25FA</key>
 		<dict>
 			<key>primary</key>
@@ -93,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>544212980401A6DA7806F65EAD8C6637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EAD26FEFD7C04C3E2C7218C2145C13E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,6 +132,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A266C64A75DCCD5A5448B196FBE96E77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AD4C97BC56D09C178CE030AC99FC0452</key>
 		<dict>
 			<key>primary</key>
@@ -133,6 +148,11 @@
 			<true/>
 		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4DE8FD3521861A57B29606A02B77E8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,10 +9,13 @@
 
 import UIKit
 import XLPagerTabStrip
+import Cartography
 
 class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
     
     var daysWithForecastItemList: [ForecastDate: [ForecastItem]]!
+    var dialogFullScreenView: UIView?
+    var dialogLoadingGroup: STLoadingGroup?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,7 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
     }
     
     func getForecast(){
+        showProgressDialog()
         Location.getLocation(accuracy: .room, frequency: .oneShot, success: { (_, location) -> (Void) in
             let late = String(location.coordinate.latitude)
             let long = String(location.coordinate.longitude)
@@ -31,13 +35,17 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
                                                  late: late,
                                                  long: long,
                                                  tempUnits: "imperial",
-                                                 onSuccess: { (response) in
-                                                    self.setForecastData(response)
+                                                 onSuccess: {[weak self] (response) in
+                                                    self?.setForecastData(response)
+                                                    self?.hideProgressDialog()
             },
-                                                 onError: { error in })
+                                                 onError: { [weak self ]error in
+                                                    self?.hideProgressDialog()
+            })
             
-        }) { (request, lastLocation, error) -> (Void) in
+        }) { [weak self ](request, lastLocation, error) -> (Void) in
             request.cancel()
+            self?.hideProgressDialog()
             AppUtils.showErrorMessage("Location monitoring failed due to an error \(error)")
         }
     }
@@ -63,5 +71,34 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
             
         }
         return tabViewsList
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    
+    public func showProgressDialog(){
+        dialogLoadingGroup = STLoadingGroup(side: 80, style: .arch)
+        
+        if dialogFullScreenView == nil {
+            dialogFullScreenView = UIView(frame: self.view.frame)
+            dialogFullScreenView?.backgroundColor = UIColor(red: 0.0, green: 0.0, blue:0.0, alpha: 0.3)
+        }
+        
+        if !(dialogFullScreenView?.isDescendant(of: self.view))!{
+            self.view.addSubview(dialogFullScreenView!)
+            constrain(dialogFullScreenView!) { view in
+                view.edges == view.superview!.edges
+            }
+        }
+        
+        dialogLoadingGroup?.show(dialogFullScreenView)
+        dialogLoadingGroup?.startLoading()
+    }
+    
+    public func hideProgressDialog(){
+        dialogLoadingGroup?.stopLoading()
+        dialogFullScreenView?.removeFromSuperview()
     }
 }
