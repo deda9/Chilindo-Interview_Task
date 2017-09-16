@@ -14,10 +14,12 @@ This demo is written by **MVC** , **SOLID** and
 
 5- Document it 
 
-This demo talk to openweather [api](https://openweathermap.org) to get the current weather for your current location and the forecast for the five days .
+This demo is writen by swift 3 and xcode 8.2 and it talks to openweather [api](https://openweathermap.org) to get the current weather for your current location and the forecast for the five days .
 
 1- the current location view it ask for the location permission for the first time to get your location then talk to open weather api to get the data about the current weather like Temp, Humidity and wind speed, etc 
+
 2- the forecast view , it gets the weather for the next five days and each day maybe have more than weather data for 3 hours, its show the dates by tabs where each tab show the data for this date by time , when click on any time it shows the data for this time 
+
 3- we cover the unit testing for the models and the current weather only view by using Quick/Nibmle frameworks
 
 **Library**
