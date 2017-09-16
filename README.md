@@ -1,6 +1,6 @@
 Hey! 
 
-This is the assignment foe [Chilindo](http://www.chilindo.com/de) Interview
+This is the assignment for [Chilindo](http://www.chilindo.com/de) Interview
 
 This demo is written by **MVC** , **SOLID** and 
 
