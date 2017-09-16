@@ -7,10 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import Accounts
 
+/**
+ *
+ * Login view with facebook
+ */
 class LoginViewController: BaseViewController {
     
+    lazy var facebookLoginNetworkRequest = FacebookNetworkLoginRequest()
     var navigationDelegate: LoginViewNavigations!
+    lazy var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar()
@@ -20,18 +29,27 @@ class LoginViewController: BaseViewController {
     //MARK: Actions
     //
     @IBAction func loginWithFacebook(_ sender: Any) {
-        FacebookLoginUtls().getFacebookUserData()
-//        if let accessToken = FacebookLoginUtls().login() {
-//            FacebookLoginRequest()
-//                .login(accessToken: accessToken, onSuccess: { user in
-//                    UserDefaultsUtils.saveUserName(user.name)
-//                    UserDefaultsUtils.saveUserEmail(user.email)
-//                    UserDefaultsUtils.saveUserProfileUrl(self.getUserProfile(user))
-//                    UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
-//                }, onError: { error in
-//                    
-//                })
-//        }
+        showProgressDialog()
+        
+        facebookLoginNetworkRequest.loginUserWithFacebook()
+            .subscribe(onNext: { [unowned self] user in
+                self.hideProgressDialog()
+                UserDefaultsUtils.saveUserName(user.name)
+                UserDefaultsUtils.saveUserEmail(user.email)
+                UserDefaultsUtils.saveUserProfileUrl(self.getUserProfile(user))
+                UserDefaultsUtils.saveUserCoverUrl(user.cover?.source)
+                self.navigationDelegate.openHomeView()
+                }, onError: { error in
+                    
+                    self.hideProgressDialog()
+                    
+                    if  error._code == Int(ACErrorAccountNotFound.rawValue) {
+                        AppUtils.showErrorMessage("There is no Facebook accounts configured. you can add or created a Facebook account in your settings.")
+                    }else{
+                        AppUtils.showErrorMessage("Permission not granted For Your Application")
+                    }
+                    
+            }).addDisposableTo(disposeBag)
     }
     
     func getUserProfile(_ user: User) -> String? {

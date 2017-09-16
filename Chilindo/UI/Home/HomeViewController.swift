@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+/**
+ * Home view which setup the menu and the view inside it
+ *
+ */
 class HomeViewController: MenuContainerViewController {
 
     override func viewDidLoad() {
@@ -20,6 +23,10 @@ class HomeViewController: MenuContainerViewController {
         addMenuIconOnNavigationBar()
     }
 
+    /**
+     * return the menus item + the user profile header
+     *
+     */
     private func  getMenuItem() -> [MenuItem]{
         var menuItemArray = [MenuItem]()
         
@@ -46,6 +53,10 @@ class HomeViewController: MenuContainerViewController {
         return menuItemArray
     }
     
+    /**
+     * return all the controllers will be on the menus
+     *
+     */
     private func contentControllers() -> [UIViewController] {
         var contentList = [UIViewController]()
         contentList.append(CurrentWeatherViewController(nibName: "BaseWeatherView", bundle: nil))

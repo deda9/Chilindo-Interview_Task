@@ -9,17 +9,28 @@
 import Foundation
 import UIKit
 
+/**
+ *
+ * Coordinator has all the oprations to open the view
+ */
 protocol LoginViewNavigations {
     func openHomeView()
 }
+
 class Coordinator {
     weak var window: UIWindow!
     weak var navigationController: UINavigationController!
     
     init(_ window: UIWindow){
-        let loginView = LoginViewController(nibName: "LoginView", bundle: nil)
-        loginView.navigationDelegate = self
-        navigationController = UINavigationController(rootViewController: loginView)
+        if(UserDefaultsUtils.getUserEmail() != "NONE"){
+            let view = HomeViewController(nibName: "HomeView", bundle: nil)
+            navigationController = UINavigationController(rootViewController: view)
+        }else{
+            let loginView = LoginViewController(nibName: "LoginView", bundle: nil)
+            loginView.navigationDelegate = self
+            navigationController = UINavigationController(rootViewController: loginView)
+        }
+        
         self.window = window
     }
     

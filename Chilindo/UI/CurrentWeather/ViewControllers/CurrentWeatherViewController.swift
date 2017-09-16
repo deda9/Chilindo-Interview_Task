@@ -9,7 +9,10 @@
 
 
 import UIKit
-
+/**
+ *
+ * Contains all the current weather methods
+ */
 class CurrentWeatherViewController: BaseWeatherViewController {
     
     override func viewDidLoad() {
@@ -25,6 +28,10 @@ class CurrentWeatherViewController: BaseWeatherViewController {
         navigationItem.title = "Current Weather"
     }
     
+    /**
+     * Call the network methods, after the get teh current locatioon
+     *
+     */
     func getCurrentWeather(){
         showProgressDialog()
         Location.getLocation(accuracy: .room, frequency: .oneShot, success: { (_, location) -> (Void) in
@@ -53,6 +60,10 @@ class CurrentWeatherViewController: BaseWeatherViewController {
         }
     }
     
+    /**
+     * Call the base current weather vuew to set the data
+     *
+     */
     func setCurrentWeatherData(_ response: CurrentWeatherResponse){
         setPressure(response.weatherData)
         setTemp(response.weatherData)

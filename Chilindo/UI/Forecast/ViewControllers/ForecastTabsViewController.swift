@@ -10,7 +10,10 @@
 import UIKit
 import XLPagerTabStrip
 import Cartography
-
+/**
+ * constains all the medthods to setup teh tabs
+ *
+ */
 class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
     
     var daysWithForecastItemList: [ForecastDate: [ForecastItem]]!
@@ -22,6 +25,10 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
         getForecast()
     }
     
+    /**
+     * Call to location manager to get the curent locationa nd then get the forecast
+     *
+     */
     func getForecast(){
         showProgressDialog()
         Location.getLocation(accuracy: .room, frequency: .oneShot, success: { (_, location) -> (Void) in
@@ -38,7 +45,7 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
                                                  onSuccess: {[weak self] (response) in
                                                     self?.setForecastData(response)
                                                     self?.hideProgressDialog()
-            },
+                },
                                                  onError: { [weak self ]error in
                                                     self?.hideProgressDialog()
             })
@@ -50,11 +57,22 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
         }
     }
     
+    /**
+     *
+     * set the data after getting the forescast
+     */
     func setForecastData(_ response: ForecastResponse){
         daysWithForecastItemList = ForecastResponseParser.getDaysWithForecastItemList(response)
-        reloadPagerTabStripView()
+        if(!daysWithForecastItemList.isEmpty){
+            reloadPagerTabStripView()
+        }
+        
     }
     
+    /**
+     * helper methods which will add the tabs based on the number of the forescast days
+     *
+     */
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         
         var tabViewsList = [UIViewController]()
@@ -63,7 +81,7 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
             return tabViewsList
         }
         
-         for (date, forecastList) in daysWithForecastItemList {
+        for (date, forecastList) in daysWithForecastItemList {
             let view = ForecastListViewController(nibName: "ForecastListView", bundle: nil)
             view.tabTitle = date.dateText
             view.forecastItemList = forecastList
@@ -78,6 +96,10 @@ class ForecastTabsViewController: ButtonBarPagerTabStripViewController {
     }
     
     
+    /**
+     * Show Dailog/hide
+     *
+     */
     public func showProgressDialog(){
         dialogLoadingGroup = STLoadingGroup(side: 80, style: .arch)
         

@@ -9,6 +9,10 @@
 import UIKit
 import Cartography
 
+/**
+ * Base view conctroller has all the base methods
+ *
+ */
 open class BaseViewController: UIViewController {
     var dialogFullScreenView: UIView?
     var dialogLoadingGroup: STLoadingGroup?
@@ -20,6 +24,10 @@ open class BaseViewController: UIViewController {
         hideNavigationBottomLine()
     }
     
+    /**
+     *
+     * When needs to add the menu icon
+     */
     func addMenuIconOnNavigationBar() -> Void {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "Menu" as String), for: .normal)
@@ -33,6 +41,10 @@ open class BaseViewController: UIViewController {
         // can override this in sub class
     }
     
+    /**
+     * Navigation customize
+     *
+     */
     public func customNavigationBarColor(){
         navigationController?.navigationBar.barTintColor = UIColor.black
         navigationController?.navigationBar.tintColor = UIColor.white
@@ -53,7 +65,10 @@ open class BaseViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    
+    /**
+     * Progress dialog show/hide
+     *
+     */
     public func showProgressDialog(){
         dialogLoadingGroup = STLoadingGroup(side: 80, style: .arch)
         

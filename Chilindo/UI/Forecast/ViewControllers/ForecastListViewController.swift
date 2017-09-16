@@ -8,7 +8,10 @@
 
 import UIKit
 import XLPagerTabStrip
-
+/**
+ * Forecast days list
+ *
+ */
 class ForecastListViewController: BaseViewController, IndicatorInfoProvider {
     
     var tabTitle = "View"
@@ -22,6 +25,10 @@ class ForecastListViewController: BaseViewController, IndicatorInfoProvider {
         setupCellNibRegistration(nibName: ForecastCellView.IDENTIFIRE)
     }
     
+    /**
+     * Table setup
+     *
+     */
     func setupCellNibRegistration(nibName: String?) -> Void {
         assert((self.nibName != nil) && !(self.nibName?.isEmpty)!, "Cell nib name, Override setupCellNibName Func ")
         let cellNib = UINib.init(nibName: nibName!, bundle: nil)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B0688E04741B669278895E5 /* Pods_Chilindo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60357AD73CCD433347B8437F /* Pods_Chilindo.framework */; };
 		66EA770457E1ECE9A187AF01 /* Pods_Chilindo_ChilindoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC1F91D105A6651BD65A14 /* Pods_Chilindo_ChilindoTests.framework */; };
+		8F0269901F6CA42B0007F47C /* FacebookLoginUtls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02698F1F6CA42B0007F47C /* FacebookLoginUtls.swift */; };
+		8F0269921F6CA4950007F47C /* FacebookNetworkLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0269911F6CA4950007F47C /* FacebookNetworkLoginRequest.swift */; };
 		8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C661F631D0D003D19E3 /* MenuItemNameViewCell.swift */; };
 		8F089C741F631D0D003D19E3 /* MenuItemNameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C671F631D0D003D19E3 /* MenuItemNameViewCell.xib */; };
 		8F089C751F631D0D003D19E3 /* UserInfoHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C681F631D0D003D19E3 /* UserInfoHeaderViewCell.swift */; };
@@ -27,7 +29,6 @@
 		8F089C8D1F6335BF003D19E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C8C1F6335BF003D19E3 /* LoginViewController.swift */; };
 		8F089C8F1F6335C8003D19E3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F089C8E1F6335C8003D19E3 /* LoginView.xib */; };
 		8F089C911F633625003D19E3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C901F633625003D19E3 /* RoundButton.swift */; };
-		8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */; };
 		8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F089C951F63386A003D19E3 /* AppUtils.swift */; };
 		8F9423B01F65C5F200376812 /* ForecastListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F9423AF1F65C5F200376812 /* ForecastListView.xib */; };
 		8F9423B31F65C63D00376812 /* ForecastCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9423B21F65C63D00376812 /* ForecastCellView.swift */; };
@@ -85,7 +86,6 @@
 		8FC953F81F633FB3004AAC97 /* UserPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */; };
 		8FC953FA1F6340F0004AAC97 /* BaseBackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */; };
 		8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */; };
-		8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */; };
 		8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */; };
 		8FD9E9131F684CFB001D53A0 /* CityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E9121F684CFB001D53A0 /* CityModelTest.swift */; };
 		8FF0A1CC1F6469FC0006AC06 /* ForecastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0A1CB1F6469FC0006AC06 /* ForecastListViewController.swift */; };
@@ -117,6 +117,8 @@
 		3361B10DA671304B9C303F11 /* Pods-Chilindo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo/Pods-Chilindo.release.xcconfig"; sourceTree = "<group>"; };
 		60357AD73CCD433347B8437F /* Pods_Chilindo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chilindo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643C7D1883421B1A9608423A /* Pods-Chilindo-ChilindoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chilindo-ChilindoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chilindo-ChilindoTests/Pods-Chilindo-ChilindoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F02698F1F6CA42B0007F47C /* FacebookLoginUtls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUtls.swift; sourceTree = "<group>"; };
+		8F0269911F6CA4950007F47C /* FacebookNetworkLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookNetworkLoginRequest.swift; sourceTree = "<group>"; };
 		8F089C661F631D0D003D19E3 /* MenuItemNameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemNameViewCell.swift; sourceTree = "<group>"; };
 		8F089C671F631D0D003D19E3 /* MenuItemNameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemNameViewCell.xib; sourceTree = "<group>"; };
 		8F089C681F631D0D003D19E3 /* UserInfoHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderViewCell.swift; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 		8F089C8C1F6335BF003D19E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F089C8E1F6335C8003D19E3 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		8F089C901F633625003D19E3 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginUtls.swift; sourceTree = "<group>"; };
 		8F089C951F63386A003D19E3 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		8F9423AF1F65C5F200376812 /* ForecastListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastListView.xib; sourceTree = "<group>"; };
 		8F9423B21F65C63D00376812 /* ForecastCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCellView.swift; sourceTree = "<group>"; };
@@ -201,7 +202,6 @@
 		8FC953F71F633FB3004AAC97 /* UserPhotoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoData.swift; sourceTree = "<group>"; };
 		8FC953F91F6340F0004AAC97 /* BaseBackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackendRequest.swift; sourceTree = "<group>"; };
 		8FC953FB1F634146004AAC97 /* AlamofireDataRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtensions.swift; sourceTree = "<group>"; };
-		8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginRequest.swift; sourceTree = "<group>"; };
 		8FC954001F634F80004AAC97 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		8FD9E9121F684CFB001D53A0 /* CityModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModelTest.swift; sourceTree = "<group>"; };
 		8FF0A1CB1F6469FC0006AC06 /* ForecastListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastListViewController.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		8F089C921F63383D003D19E3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8F089C931F633841003D19E3 /* FacebookLoginUtls.swift */,
+				8F02698F1F6CA42B0007F47C /* FacebookLoginUtls.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -617,7 +617,7 @@
 		8FC953FD1F634195004AAC97 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8FC953FE1F6341A2004AAC97 /* FacebookLoginRequest.swift */,
+				8F0269911F6CA4950007F47C /* FacebookNetworkLoginRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -887,7 +887,6 @@
 				8FFD5AC81F644B58004955BB /* ForecastItem.swift in Sources */,
 				8FFD5AC21F644A57004955BB /* ForecastResponse.swift in Sources */,
 				8F9423C21F65CE9100376812 /* STArchLoading.swift in Sources */,
-				8FC953FF1F6341A2004AAC97 /* FacebookLoginRequest.swift in Sources */,
 				8F089C961F63386A003D19E3 /* AppUtils.swift in Sources */,
 				8FF0A1CC1F6469FC0006AC06 /* ForecastListViewController.swift in Sources */,
 				8F089C791F631D0D003D19E3 /* MenuContainerViewController.swift in Sources */,
@@ -902,6 +901,7 @@
 				8F9423C91F65CE9100376812 /* STZhiHuLoading.swift in Sources */,
 				8FF0A1D01F646A2A0006AC06 /* BaseWeatherViewController.swift in Sources */,
 				8FA618541F64254C00D265A2 /* WeatherData.swift in Sources */,
+				8F0269921F6CA4950007F47C /* FacebookNetworkLoginRequest.swift in Sources */,
 				8FC954011F634F80004AAC97 /* UserDefaultsUtils.swift in Sources */,
 				8FC953FC1F634146004AAC97 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F9423CB1F65CE9100376812 /* STLoadingGroup.swift in Sources */,
@@ -936,11 +936,11 @@
 				8FB914F31F62E8A8002761EA /* RoundedImageView.swift in Sources */,
 				8FB914DC1F62E5C3002761EA /* CurrentWeatherViewController.swift in Sources */,
 				8FA6184A1F6413FD00D265A2 /* RequestsQueue.swift in Sources */,
-				8F089C941F633841003D19E3 /* FacebookLoginUtls.swift in Sources */,
 				8FB914DA1F62E5B1002761EA /* ForecastTabsViewController.swift in Sources */,
 				8F089C731F631D0D003D19E3 /* MenuItemNameViewCell.swift in Sources */,
 				8F089C7A1F631D0D003D19E3 /* MenuItem.swift in Sources */,
 				8FA618561F6425F300D265A2 /* WeatherSys.swift in Sources */,
+				8F0269901F6CA42B0007F47C /* FacebookLoginUtls.swift in Sources */,
 				8FA618611F6427E900D265A2 /* CurrentWeatherNetworkRequest.swift in Sources */,
 				8F089C911F633625003D19E3 /* RoundButton.swift in Sources */,
 				8F9423C51F65CE9100376812 /* STPacManLoading.swift in Sources */,

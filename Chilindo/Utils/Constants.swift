@@ -24,7 +24,7 @@ class Constants{
     private static let FORECAST = "forecast"
     public static let FORECAST_URL = WEATHER_BASE_URL + FORECAST
 
-    public static let WEATHER_APP_KEY = "3cb726822c464af37bbbbb89747e7640"
+    public static let WEATHER_APP_KEY = "48c5211046b770315805a8283b4fef1c"
     
 }
 

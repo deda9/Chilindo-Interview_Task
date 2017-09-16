@@ -8,6 +8,10 @@
 
 import ObjectMapper
 
+/**
+ * Forecast Model based on the models 
+ *
+ */
 class ForecastResponse: Mappable{
     
     var city : City?

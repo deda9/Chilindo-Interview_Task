@@ -7,7 +7,10 @@
 //
 
 import ObjectMapper
-
+/**
+ *
+ * Facebook user model based on facebook response api
+ */
 class User: Mappable{
     
     var cover : UserCover?

@@ -7,7 +7,10 @@
 //
 import RxSwift
 import Alamofire
-
+/**
+ * Contians all the networkk methods for the forecast apis
+ *
+ */
 class ForecastNetworkRequest: BaseBackendRequest<ForecastResponse> {
     
     var disposeBag = DisposeBag()
