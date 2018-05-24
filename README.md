@@ -1,6 +1,6 @@
 Hey! 
 
-This is the assignment for [Chilindo](http://www.chilindo.com/de) Interview
+This is demo for Weather apis  
 
 This demo is written by **MVC** , **SOLID** and 
 
